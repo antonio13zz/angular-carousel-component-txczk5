@@ -14,6 +14,44 @@ export class AppComponent {
   }
   public mapCentrexList;
   public mapCentrex = { dataCentrex: [] };
+  private setCentrex(mapCentralita): void {
+    let centrexTypes = {};
+    const ddiNumber: string[] = [];
+    mapCentralita.forEach((obj) => {
+      if (
+        !centrexTypes[obj.svas[0].product.name] &&
+        centrexTypes[obj.svas[0].product.name] !== 0
+      ) {
+        centrexTypes = { ...centrexTypes, [obj.svas[0].product.name]: 0 };
+      }
+      if (obj.svas[0].product.name.toLowerCase().includes('ddi')) {
+        ddiNumber.push(obj.svas[0].product.name);
+      } else {
+        centrexTypes[obj.svas[0].product.name] =
+          parseInt(
+            obj.svas[0].product?.nameToPrint?.split('(')[1].replace(/\D/g, ''),
+            10
+          ) || obj.svas.length;
+      }
+    });
+    centrexTypes['Numeraciones DDI Altas Nuevas'] = ddiNumber?.length || 0;
+    const mapCentrexData = {
+      ud_sede_1: centrexTypes['Básico IP'] || 0,
+      ud_sede_2: centrexTypes['Básico DEC+base'] || 0,
+      ud_sede_3: centrexTypes['Puesto Básico DEC 2'] || 0,
+      ud_sede_4: centrexTypes['Avanzado IP'] || 0,
+      ud_sede_5: centrexTypes['Recepcionista IP'] || 0,
+      ud_sede_6: centrexTypes['Sala IP'] || 0,
+      ud_m1: centrexTypes['Móvil básico'] || 0,
+      ud_m2: centrexTypes['Móvil avanzado'] || 0,
+      ud_m3: centrexTypes['Móvil terceros'] || 0,
+      adic: centrexTypes['Numeraciones DDI Altas Nuevas'] || 0,
+      ud_equipo: centrexTypes['Número de Switch'] || 0,
+    };
+
+    console.log(mapCentrexData);
+  }
+
   getListCentrex() {
     const commercialData: any = COMERCIALDATA;
     const test = commercialData.find((e) =>
@@ -52,12 +90,15 @@ export class AppComponent {
         arrayLineCentrexMovilTerceros,
         groupCentralita
       );
+      this.setCentrex(this.mapCentrex.dataCentrex);
+
       console.log(this.mapCentrex.dataCentrex);
     } else {
       this.mapCentrex.dataCentrex = arrayLineCentrexFijo.concat(
         arrayLineCentrexMovil,
         arrayLineCentrexMovilTerceros
       );
+      this.setCentrex(this.mapCentrex.dataCentrex);
     }
   }
 
