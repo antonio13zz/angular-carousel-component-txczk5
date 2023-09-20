@@ -3,19 +3,12 @@ export const COMERCIALDATA = [
     id: 1,
     ospTerminalWorkflow: 'standar',
     isCompletedAC: true,
+    ospCartItemType: 'alta',
     ospCartItemSubtype: 'pospago',
-    ospCartItemType: 'portabilidad',
-    originType: 'pospago',
-    serviceFixedNumber: '918441814',
+    originType: 'todos',
     ospIsSelected: true,
+    serviceNumber: '',
     magazineMode: false,
-    commercialActStartedFromContractButton: true,
-    mobileOperatorName: 'MOVISTAR',
-    mobileOperatorCode: '001',
-    serviceNumber: '666666666',
-    numLines: 1,
-    lines: [{ num: '', operator: '' }],
-    sameOperator: '',
     rates: [
       {
         name: 'Love Empresa Impulsa 5',
@@ -26,7 +19,6 @@ export const COMERCIALDATA = [
         groupName: 'Convergente_AN',
         isAntaresActivation: false,
         isUpgrade: true,
-        idPromoTarget: 'ACMS-1-2HWWIA',
         kratosPriceRateFreeAmount: 58,
         kratosPriceRateIncludedAmount: 70.18,
         otherSVAInfoList: [],
@@ -35,8 +27,8 @@ export const COMERCIALDATA = [
         pricePackLineIncludedAmount: 70.18,
         ratePrice: 58,
         ratePriceTaxIncluded: 70.18,
-        ratePricePromotional: 46.4,
-        ratePriceTaxIncludedPromotional: 56.14,
+        ratePricePromotional: null,
+        ratePriceTaxIncludedPromotional: null,
         ratesCharacteristics: [
           {
             name: '5 líneas móviles con GB y llamadas ilimitadas',
@@ -193,7 +185,9 @@ export const COMERCIALDATA = [
               'Digitaliza la facturación de tu negocio de una forma fácil, ágil y eficaz con una solución totalmente online y con acceso permanente',
             ospLargeDescription:
               '<div>\r\n<div>\r\n<div>\r\n<div>Con la soluci&oacute;n Factura Electr&oacute;nica Orange, podr&aacute;s emitir, recibir y organizar todas tus facturas emitidas y tus gastos.</div>\r\n\r\n<div>Adem&aacute;s, realiza presupuestos profesionales y/o albaranes de entrega para cubrir todo el proceso de facturaci&oacute;n de tu negocio.</div>\r\n\r\n<ul>\r\n\t<li>Incluye 1 usuario</li>\r\n\t<li>Creaci&oacute;n de presupuestos, albaranes, facturas proformas y facturas finales</li>\r\n\t<li>Programaci&oacute;n y emisi&oacute;n de facturas y gastos peri&oacute;dicos (recurrentes)</li>\r\n\t<li>Panel centralizado para visualizar el estado de los ingresos y gastos</li>\r\n\t<li>Gastos y tickets a&ntilde;adidos a trav&eacute;s del m&oacute;vil</li>\r\n\t<li>Integraci&oacute;n con Paypal y con tu banco para el cobro de facturas</li>\r\n</ul>\r\n\r\n<div><strong>Consulta y activa tu beneficio en t&uacute; &aacute;rea de clientes Mi Orange</strong>: <a href="https://areaclientes.orange.es/"><strong>https://areaclientes.orange.es/</strong></a></div>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n\r\n<div>\r\n<div>&nbsp;</div>\r\n</div>\r\n',
-            attachment: { type: 'image' },
+            attachment: {
+              type: 'image',
+            },
             productSpecSubcharacteristic: [],
             productSpecCharacteristicValue: [],
           },
@@ -349,7 +343,6 @@ export const COMERCIALDATA = [
             productSpecCharacteristicValue: [],
           },
         ],
-        recurringChargePeriodPromotion: '',
         relatedSvaList: '1-3M5M06',
         siebelId: '1-31IWTA',
         taxFreePrice: 58,
@@ -470,8 +463,8 @@ export const COMERCIALDATA = [
             rateName: 'Llamadas negocio ilimitadas',
             rateLargeDescription:
               '<div>Datos ilimitados 5G+ en tu l&iacute;nea m&oacute;vil, llamadas nacionales ilimitadas y 300 min a fijos internacionales.</div>\r\n\r\n<div>Disfr&uacute;tala con cualquiera de tus tarifas Love Empresa.&nbsp;</div>\r\n',
-            pricePackLineFreeAmount: 15,
-            pricePackLineIncludedAmount: 18.15,
+            pricePackLineFreeAmount: 12,
+            pricePackLineIncludedAmount: 14.52,
             kratosPriceRateFreeAmount: 15,
             kratosPriceRateIncludedAmount: 18.15,
             isDefaultLine: true,
@@ -493,10 +486,10 @@ export const COMERCIALDATA = [
             },
             typePriceName: 'techSiebelProductBundlePriceRate',
             descriptionPromotion:
-              '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-            idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
+              '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+            idPromoTarget: '1-32U7NU|1-31JMSY',
             applicationDuration: 0,
-            recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+            recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
             taxRate: 0.21,
             taxRateName: 'IVA',
             ratePriceTaxIncludedPromotional: 15.73,
@@ -621,8 +614,8 @@ export const COMERCIALDATA = [
             rateName: 'Llamadas negocio ilimitadas',
             rateLargeDescription:
               '<div>Datos ilimitados 5G+ en tu l&iacute;nea m&oacute;vil, llamadas nacionales ilimitadas y 300 min a fijos internacionales.</div>\r\n\r\n<div>Disfr&uacute;tala con cualquiera de tus tarifas Love Empresa.&nbsp;</div>\r\n',
-            pricePackLineFreeAmount: 15,
-            pricePackLineIncludedAmount: 18.15,
+            pricePackLineFreeAmount: 12,
+            pricePackLineIncludedAmount: 14.52,
             kratosPriceRateFreeAmount: 15,
             kratosPriceRateIncludedAmount: 18.15,
             isDefaultLine: true,
@@ -644,10 +637,10 @@ export const COMERCIALDATA = [
             },
             typePriceName: 'techSiebelProductBundlePriceRate',
             descriptionPromotion:
-              '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-            idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
+              '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+            idPromoTarget: '1-32U7NU|1-31JMSY',
             applicationDuration: 0,
-            recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+            recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
             taxRate: 0.21,
             taxRateName: 'IVA',
             ratePriceTaxIncludedPromotional: 15.73,
@@ -772,8 +765,8 @@ export const COMERCIALDATA = [
             rateName: 'Llamadas negocio ilimitadas',
             rateLargeDescription:
               '<div>Datos ilimitados 5G+ en tu l&iacute;nea m&oacute;vil, llamadas nacionales ilimitadas y 300 min a fijos internacionales.</div>\r\n\r\n<div>Disfr&uacute;tala con cualquiera de tus tarifas Love Empresa.&nbsp;</div>\r\n',
-            pricePackLineFreeAmount: 15,
-            pricePackLineIncludedAmount: 18.15,
+            pricePackLineFreeAmount: 12,
+            pricePackLineIncludedAmount: 14.52,
             kratosPriceRateFreeAmount: 15,
             kratosPriceRateIncludedAmount: 18.15,
             isDefaultLine: true,
@@ -795,10 +788,10 @@ export const COMERCIALDATA = [
             },
             typePriceName: 'techSiebelProductBundlePriceRate',
             descriptionPromotion:
-              '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-            idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
+              '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+            idPromoTarget: '1-32U7NU|1-31JMSY',
             applicationDuration: 0,
-            recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+            recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
             taxRate: 0.21,
             taxRateName: 'IVA',
             ratePriceTaxIncludedPromotional: 15.73,
@@ -923,8 +916,8 @@ export const COMERCIALDATA = [
             rateName: 'Llamadas negocio ilimitadas',
             rateLargeDescription:
               '<div>Datos ilimitados 5G+ en tu l&iacute;nea m&oacute;vil, llamadas nacionales ilimitadas y 300 min a fijos internacionales.</div>\r\n\r\n<div>Disfr&uacute;tala con cualquiera de tus tarifas Love Empresa.&nbsp;</div>\r\n',
-            pricePackLineFreeAmount: 15,
-            pricePackLineIncludedAmount: 18.15,
+            pricePackLineFreeAmount: 12,
+            pricePackLineIncludedAmount: 14.52,
             kratosPriceRateFreeAmount: 15,
             kratosPriceRateIncludedAmount: 18.15,
             isDefaultLine: true,
@@ -946,10 +939,10 @@ export const COMERCIALDATA = [
             },
             typePriceName: 'techSiebelProductBundlePriceRate',
             descriptionPromotion:
-              '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-            idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
+              '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+            idPromoTarget: '1-32U7NU|1-31JMSY',
             applicationDuration: 0,
-            recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+            recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
             taxRate: 0.21,
             taxRateName: 'IVA',
             ratePriceTaxIncludedPromotional: 15.73,
@@ -967,8 +960,14 @@ export const COMERCIALDATA = [
           },
         ],
         associatedLines: [
-          { id: '1-26QOJ7', type: 'associatedLine' },
-          { id: '1-2MENP4', type: 'associatedLine' },
+          {
+            id: '1-26QOJ7',
+            type: 'associatedLine',
+          },
+          {
+            id: '1-2MENP4',
+            type: 'associatedLine',
+          },
         ],
         bucket: {
           id: '1-31JMN8',
@@ -1003,8 +1002,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1022,8 +1027,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -1042,17 +1053,38 @@ export const COMERCIALDATA = [
                       name: 'ProductClass',
                       value: 'Servicios de Entretenimiento',
                     },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'SVA' },
-                    { name: 'Promotion Tag', value: 'Null' },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'Null',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Reposicionable Unico en Pack',
                     },
-                    { name: 'SVA Gratuito', value: 'Y' },
+                    {
+                      name: 'SVA Gratuito',
+                      value: 'Y',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -1064,8 +1096,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1073,10 +1111,19 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-3KV0LF',
                   name: 'Pack Entretenimiento',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1099,9 +1146,230 @@ export const COMERCIALDATA = [
             category: 'Empresa',
             childrenList: '',
             description:
+              '<div>\r\n<div>\r\n<div>Presencia de tu negocio en las principales plataformas web.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>Con el servicio de <strong><span style="color:#FF8C00">Presencia Digital</span></strong> podr&aacute;s mejorar la presencia e incrementa la visibilidad de tu negocio en internet.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div><span style="color:#FF8C00"><strong>Presencia Digital</strong></span> te permite:<br />\r\n- Controlar y gestionar las fichas de un negocio en los principales <strong>buscadores, mapas, redes de negocio y directorios de internet.</strong><br />\r\n- <strong>Actualizar la informaci&oacute;n</strong> de tu negocio, en todos los sitios de la red, de manera simult&aacute;nea y a trav&eacute;s de una <strong>&uacute;nica herramienta de autogesti&oacute;n.</strong><br />\r\n- Visualizar el estado de la <strong>sincronizaci&oacute;n y visualizaci&oacute;n</strong> <strong>de fichas</strong> en la red de sites.<br />\r\n- Generar publicaciones en la ficha <strong>Google My Business.</strong><br />\r\n- Analizar estad&iacute;sticas de <strong>tr&aacute;fico.</strong></div>\r\n</div>\r\n</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/presencia_icon (1).svg',
+            id: '1-3MQG3D',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 10,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 12.1,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Presencia de tu negocio en las principales plataformas web',
+            ospTv: '',
+            ospTypeChannel: 'otros',
+            price: 10,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              cartItemRouter: {
+                id: '1-3MQG3D',
+                action: '',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value:
+                        'Producto unico nivel cliente,Reposicionable Unico en Pack',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 10,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 12.1,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-3MQG3D',
+                  name: 'Presencia Digital',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+              ospTv: '',
+            },
+            promotionLists: [
+              {
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 10,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 12.1,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                promotion: {
+                  cartItemRouter: {
+                    id: '1-3MQG3D',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Marketing Digital',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '5',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value:
+                            'Producto unico nivel cliente,Reposicionable Unico en Pack',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 10,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 12.1,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3MQG3D',
+                      name: 'Presencia Digital',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  ospTv: '',
+                },
+              },
+            ],
+            realId: '',
+            show: true,
+            subCategory: 'CEP_Movil',
+            svaChildrenList: null,
+            svaProductClass: 'Marketing Digital',
+            title: 'Presencia Digital',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Empresa',
+            childrenList: '',
+            description:
               '<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>Con la soluci&oacute;n Factura Electr&oacute;nica Orange, podr&aacute;s emitir, recibir y organizar todas tus facturas emitidas y tus gastos.&nbsp;</div>\r\n\r\n<div>Adem&aacute;s, realiza presupuestos profesionales y/o albaranes de entrega para cubrir todo el proceso de facturaci&oacute;n de tu negocio.</div>\r\n\r\n<div>- Incluye 1 usuario.</div>\r\n\r\n<div>- Creaci&oacute;n de presupuestos, albaranes, facturas proformas y facturas finales.</div>\r\n\r\n<div>- Programaci&oacute;n y emisi&oacute;n de facturas y gastos peri&oacute;dicos (recurrentes).</div>\r\n\r\n<div>- Panel centralizado para visualizar el estado de los ingresos y gastos.</div>\r\n\r\n<div>- Gastos y tickets a&ntilde;adidos a trav&eacute;s del m&oacute;vil.</div>\r\n\r\n<div>- Integraci&oacute;n con Paypal y con tu banco para el cobro de facturas.</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/FacturaElectronica.png',
             id: '1-3V20Z7',
             isByRule: false,
             isConstraint: false,
@@ -1109,8 +1377,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1128,7 +1402,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                   {
                     valueType: 'ospTypeChannel',
                     value: 'Servicios Profesionales',
@@ -1147,9 +1424,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicios Profesionales' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Profesionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -1166,8 +1452,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 12 },
-                      taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1188,7 +1480,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1206,8 +1503,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 12 },
-                      taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1226,8 +1529,14 @@ export const COMERCIALDATA = [
                           name: 'ProductClass',
                           value: 'Servicios Profesionales',
                         },
-                        { name: 'Cardinalidad', value: '3' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'Cardinalidad',
+                          value: '3',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value:
@@ -1244,8 +1553,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 12 },
-                          taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 12,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 14.52,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -1266,7 +1581,12 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -1293,6 +1613,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>Digitaliza la facturaci&oacute;n de tu negocio con una soluci&oacute;n totalmente online con la que tambi&eacute;n podr&aacute;s gestionar la informaci&oacute;n y los procesos de tus clientes y proyectos.</div>\r\n\r\n<div>Con la soluci&oacute;n Gesti&oacute;n de Facturas y Clientes Orange, podr&aacute;s emitir, recibir y organizar todas tus facturas emitidas y tus gastos. Podr&aacute;s realizar presupuestos profesionales y/o albaranes, cubriendo todo tu proceso de facturaci&oacute;n.</div>\r\n\r\n<div>Centraliza, automatiza y simplifica la gesti&oacute;n de tus clientes y proyectos, disponiendo de toda su informaci&oacute;n, mejorando los procesos y adapt&aacute;ndolos a las necesidades espec&iacute;ficas de tu empresa.</div>\r\n\r\n<div>- Soluci&oacute;n de 2 usuarios.</div>\r\n\r\n<div>- Creaci&oacute;n de presupuestos, albaranes, facturas proformas y facturas finales.</div>\r\n\r\n<div>- Programaci&oacute;n y emisi&oacute;n de facturas y gastos peri&oacute;dicos (recurrentes).</div>\r\n\r\n<div>- Gesti&oacute;n de clientes, proyectos y oportunidades de venta.</div>\r\n\r\n<div>- Reporting y seguimiento comercial.</div>\r\n\r\n<div>- Integraci&oacute;n con Outlook.</div>\r\n\r\n<div>- Panel centralizado para visualizar el estado de los ingresos y gastos.</div>\r\n\r\n<div>- Gastos y tickets a&ntilde;adidos a trav&eacute;s del m&oacute;vil.</div>\r\n\r\n<div>- Integraci&oacute;n con Paypal y con tu banco para el cobro de facturas.</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/GestionDeFacturaYClientes.png',
             id: '1-3V20ZP',
             isByRule: false,
             isConstraint: false,
@@ -1300,8 +1621,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 30 },
-                  taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 30,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 36.3,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1319,7 +1646,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                   {
                     valueType: 'ospTypeChannel',
                     value: 'Servicios Profesionales',
@@ -1338,9 +1668,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicios Profesionales' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Profesionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -1357,8 +1696,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 30 },
-                      taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 30,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 36.3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1379,7 +1724,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1405,6 +1755,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>Digitaliza la facturaci&oacute;n de tu negocio con una soluci&oacute;n totalmente online con la que tambi&eacute;n podr&aacute;s gestionar la informaci&oacute;n y los procesos de tus clientes y proyectos.</div>\r\n\r\n<div>Con la soluci&oacute;n Gesti&oacute;n de Facturas y Clientes Orange, podr&aacute;s emitir, recibir y organizar todas tus facturas emitidas y tus gastos. Podr&aacute;s realizar presupuestos profesionales y/o albaranes, cubriendo todo tu proceso de facturaci&oacute;n.</div>\r\n\r\n<div>Centraliza, automatiza y simplifica la gesti&oacute;n de tus clientes y proyectos, disponiendo de toda su informaci&oacute;n, mejorando los procesos y adapt&aacute;ndolos a las necesidades espec&iacute;ficas de tu empresa.</div>\r\n\r\n<div>- Soluci&oacute;n de 5 usuarios.</div>\r\n\r\n<div>- Creaci&oacute;n de presupuestos, albaranes, facturas proformas y facturas finales.</div>\r\n\r\n<div>- Programaci&oacute;n y emisi&oacute;n de facturas y gastos peri&oacute;dicos (recurrentes).</div>\r\n\r\n<div>- Gesti&oacute;n de clientes, proyectos y oportunidades de venta.</div>\r\n\r\n<div>- Reporting y seguimiento comercial.</div>\r\n\r\n<div>- Integraci&oacute;n con Outlook.</div>\r\n\r\n<div>- Panel centralizado para visualizar el estado de los ingresos y gastos.</div>\r\n\r\n<div>- Gastos y tickets a&ntilde;adidos a trav&eacute;s del m&oacute;vil.</div>\r\n\r\n<div>- Integraci&oacute;n con Paypal y con tu banco para el cobro de facturas.</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/GestionDeFacturaYClientes.png',
             id: '1-3V20YP',
             isByRule: false,
             isConstraint: false,
@@ -1412,8 +1763,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 60 },
-                  taxIncludedAmount: { unit: 'EUR', value: 72.6 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 60,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 72.6,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1431,7 +1788,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                   {
                     valueType: 'ospTypeChannel',
                     value: 'Servicios Profesionales',
@@ -1450,13 +1810,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicios Profesionales' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Profesionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
-                        'TEIDE_PROD_UNICO - Gestion Factura,Producto unico nivel cliente',
+                        'Producto unico nivel cliente,TEIDE_PROD_UNICO - Gestion Factura',
                     },
                   ],
                   relatedParty: [],
@@ -1469,8 +1838,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 60 },
-                      taxIncludedAmount: { unit: 'EUR', value: 72.6 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 60,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 72.6,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1491,7 +1866,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1525,8 +1905,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 14 },
-                  taxIncludedAmount: { unit: 'EUR', value: 16.94 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 14,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 16.94,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1544,8 +1930,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -1560,15 +1952,30 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicios Profesionales' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Profesionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Producto unico nivel cliente',
                     },
-                    { name: 'Licencias Contratadas', value: '0' },
-                    { name: 'Licencias Contratadas Anterior', value: '0' },
+                    {
+                      name: 'Licencias Contratadas',
+                      value: '0',
+                    },
+                    {
+                      name: 'Licencias Contratadas Anterior',
+                      value: '0',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -1580,8 +1987,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 14 },
-                      taxIncludedAmount: { unit: 'EUR', value: 16.94 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 14,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 16.94,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1611,7 +2024,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1629,8 +2047,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 14 },
-                      taxIncludedAmount: { unit: 'EUR', value: 16.94 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 14,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 16.94,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1649,14 +2073,26 @@ export const COMERCIALDATA = [
                           name: 'ProductClass',
                           value: 'Servicios Profesionales',
                         },
-                        { name: 'Cardinalidad', value: '3' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'Cardinalidad',
+                          value: '3',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Producto unico nivel cliente',
                         },
-                        { name: 'Licencias Contratadas', value: '0' },
-                        { name: 'Licencias Contratadas Anterior', value: '0' },
+                        {
+                          name: 'Licencias Contratadas',
+                          value: '0',
+                        },
+                        {
+                          name: 'Licencias Contratadas Anterior',
+                          value: '0',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -1668,8 +2104,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 14 },
-                          taxIncludedAmount: { unit: 'EUR', value: 16.94 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 14,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 16.94,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -1699,7 +2141,12 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -1734,8 +2181,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.90001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.049587,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.90001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -1761,7 +2214,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Salud y cuidado',
+                  },
                 ],
               },
             ],
@@ -1776,15 +2236,30 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicio de Salud' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicio de Salud',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Reposicionable Compatible Lineas',
                     },
-                    { name: 'Licencias Contratadas', value: '2' },
-                    { name: 'Licencias Contratadas Anterior', value: '0' },
+                    {
+                      name: 'Licencias Contratadas',
+                      value: '2',
+                    },
+                    {
+                      name: 'Licencias Contratadas Anterior',
+                      value: '0',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -1796,8 +2271,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1827,7 +2308,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1844,15 +2330,38 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Default' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'SVA' },
-                    { name: 'Promotion Tag', value: 'SAVIA' },
-                    { name: 'Secuencia', value: '1' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Default',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'SAVIA',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -1864,8 +2373,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -8.099173 },
-                      taxIncludedAmount: { unit: 'EUR', value: -9.8 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -8.099173,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -9.8,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1876,7 +2391,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-3M69J1' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-3M69J1',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -1906,8 +2425,8 @@ export const COMERCIALDATA = [
                     version: '1.0',
                     price: [
                       {
-                        taxIncludedAmount: -9.95,
-                        dutyFreeAmount: -8.22314,
+                        taxIncludedAmount: -4.90001,
+                        dutyFreeAmount: -4.049587,
                         taxRate: 0.21,
                         ospTaxRateName: 'IVA',
                         currencyCode: 'EUR',
@@ -1931,8 +2450,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -1947,15 +2472,30 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
                         },
-                        { name: 'Licencias Contratadas', value: '2' },
-                        { name: 'Licencias Contratadas Anterior', value: '0' },
+                        {
+                          name: 'Licencias Contratadas',
+                          value: '2',
+                        },
+                        {
+                          name: 'Licencias Contratadas Anterior',
+                          value: '0',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -1967,8 +2507,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -1998,7 +2544,12 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2015,15 +2566,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -2035,8 +2609,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -8.099173 },
-                          taxIncludedAmount: { unit: 'EUR', value: -9.8 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -8.099173,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -9.8,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2047,7 +2627,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M69J1' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M69J1',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2077,8 +2661,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -9.95,
-                            dutyFreeAmount: -8.22314,
+                            taxIncludedAmount: -4.90001,
+                            dutyFreeAmount: -4.049587,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -2102,8 +2686,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2118,15 +2708,30 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
                         },
-                        { name: 'Licencias Contratadas', value: '2' },
-                        { name: 'Licencias Contratadas Anterior', value: '0' },
+                        {
+                          name: 'Licencias Contratadas',
+                          value: '2',
+                        },
+                        {
+                          name: 'Licencias Contratadas Anterior',
+                          value: '0',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -2138,8 +2743,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2169,7 +2780,12 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2186,15 +2802,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -2206,8 +2845,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -8.099173 },
-                          taxIncludedAmount: { unit: 'EUR', value: -9.8 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -8.099173,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -9.8,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2218,7 +2863,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M69J1' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M69J1',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2248,8 +2897,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -9.95,
-                            dutyFreeAmount: -8.22314,
+                            taxIncludedAmount: -4.90001,
+                            dutyFreeAmount: -4.049587,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -2290,8 +2939,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                  taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 8.22314,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 9.95,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -2317,7 +2972,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Salud y cuidado',
+                  },
                 ],
               },
             ],
@@ -2332,9 +2994,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicio de Salud' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicio de Salud',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Reposicionable Compatible Lineas',
@@ -2350,8 +3021,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                      taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 8.22314,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 9.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2362,7 +3039,12 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -2379,15 +3061,38 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Default' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'SVA' },
-                    { name: 'Promotion Tag', value: 'SAVIA' },
-                    { name: 'Secuencia', value: '1' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Default',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'SAVIA',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -2399,8 +3104,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -8.22314 },
-                      taxIncludedAmount: { unit: 'EUR', value: -9.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -8.22314,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -9.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2411,7 +3122,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-3M69E7' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-3M69E7',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -2441,8 +3156,8 @@ export const COMERCIALDATA = [
                     version: '1.0',
                     price: [
                       {
-                        taxIncludedAmount: -9.95,
-                        dutyFreeAmount: -8.22314,
+                        taxIncludedAmount: -4.90001,
+                        dutyFreeAmount: -4.049587,
                         taxRate: 0.21,
                         ospTaxRateName: 'IVA',
                         currencyCode: 'EUR',
@@ -2466,8 +3181,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                      taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 8.22314,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 9.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2482,9 +3203,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
@@ -2500,8 +3230,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                          taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 8.22314,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 9.95,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2512,7 +3248,12 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2529,15 +3270,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -2549,8 +3313,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -8.22314 },
-                          taxIncludedAmount: { unit: 'EUR', value: -9.95 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -8.22314,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -9.95,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2561,7 +3331,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M69E7' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M69E7',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2591,8 +3365,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -9.95,
-                            dutyFreeAmount: -8.22314,
+                            taxIncludedAmount: -4.90001,
+                            dutyFreeAmount: -4.049587,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -2616,8 +3390,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                      taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 8.22314,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 9.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2632,9 +3412,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
@@ -2650,8 +3439,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 8.22314 },
-                          taxIncludedAmount: { unit: 'EUR', value: 9.95 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 8.22314,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 9.95,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2662,7 +3457,12 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2679,15 +3479,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -2699,8 +3522,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -8.22314 },
-                          taxIncludedAmount: { unit: 'EUR', value: -9.95 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -8.22314,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -9.95,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -2711,7 +3540,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M69E7' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M69E7',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -2741,8 +3574,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -9.95,
-                            dutyFreeAmount: -8.22314,
+                            taxIncludedAmount: -4.90001,
+                            dutyFreeAmount: -4.049587,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -2783,8 +3616,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.90001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.049587,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.90001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -2810,7 +3649,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Salud y cuidado',
+                  },
                 ],
               },
             ],
@@ -2825,9 +3671,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicio de Salud' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicio de Salud',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Reposicionable Compatible Lineas',
@@ -2843,8 +3698,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2855,7 +3716,12 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -2872,15 +3738,38 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Default' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'SVA' },
-                    { name: 'Promotion Tag', value: 'SAVIA' },
-                    { name: 'Secuencia', value: '1' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Default',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'SAVIA',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -2892,8 +3781,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: -4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2904,7 +3799,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-3M693R' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-3M693R',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -2934,8 +3833,8 @@ export const COMERCIALDATA = [
                     version: '1.0',
                     price: [
                       {
-                        taxIncludedAmount: -4.90001,
-                        dutyFreeAmount: -4.049587,
+                        taxIncludedAmount: -9.95,
+                        dutyFreeAmount: -8.22314,
                         taxRate: 0.21,
                         ospTaxRateName: 'IVA',
                         currencyCode: 'EUR',
@@ -2959,8 +3858,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -2975,9 +3880,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
@@ -2993,8 +3907,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -3005,7 +3925,12 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -3022,15 +3947,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -3042,8 +3990,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: -4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -3054,7 +4008,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M693R' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M693R',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -3084,8 +4042,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -4.90001,
-                            dutyFreeAmount: -4.049587,
+                            taxIncludedAmount: -9.95,
+                            dutyFreeAmount: -8.22314,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -3109,8 +4067,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                      taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 4.049587,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 4.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3125,9 +4089,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio de Salud' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio de Salud',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                         {
                           name: 'KeyFeature',
                           value: 'Reposicionable Compatible Lineas',
@@ -3143,8 +4116,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: 4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -3155,7 +4134,12 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -3172,15 +4156,38 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Default' },
-                        { name: 'Explicito', value: 'true' },
-                        { name: 'Categoria', value: 'Promotion' },
-                        { name: 'Promo Aplica A', value: 'SVA' },
-                        { name: 'Promotion Tag', value: 'SAVIA' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'SAVIA',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -3192,8 +4199,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -4.049587 },
-                          taxIncludedAmount: { unit: 'EUR', value: -4.9 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -4.049587,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -4.9,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -3204,7 +4217,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3M693R' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M693R',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -3234,8 +4251,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: -4.90001,
-                            dutyFreeAmount: -4.049587,
+                            taxIncludedAmount: -9.95,
+                            dutyFreeAmount: -8.22314,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -3276,8 +4293,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 330 },
-                  taxIncludedAmount: { unit: 'EUR', value: 399.3 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 330,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 399.3,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3302,8 +4325,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -3318,9 +4347,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Canales Basicos' },
-                    { name: 'Cardinalidad', value: '10' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Canales Basicos',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '10',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Producto Suspendible,Contratable en Vuelo',
@@ -3336,8 +4374,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 330 },
-                      taxIncludedAmount: { unit: 'EUR', value: 399.3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 330,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 399.3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3377,7 +4421,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -3412,8 +4459,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 490 },
-                  taxIncludedAmount: { unit: 'EUR', value: 592.9 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 490,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 592.9,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3439,8 +4492,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -3455,9 +4514,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Canales Basicos' },
-                    { name: 'Cardinalidad', value: '10' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Canales Basicos',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '10',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Contratable en Vuelo,Producto Suspendible',
@@ -3473,8 +4541,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 490 },
-                      taxIncludedAmount: { unit: 'EUR', value: 592.9 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 490,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 592.9,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3514,7 +4588,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -3550,8 +4627,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 8.2253 },
-                  taxIncludedAmount: { unit: 'EUR', value: 9.95262 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 8.2253,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 9.95262,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3569,7 +4652,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -3584,10 +4670,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Canales Basicos' },
-                    { name: 'Cardinalidad', value: '10' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: 'Contratable en Vuelo' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Canales Basicos',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '10',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: 'Contratable en Vuelo',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -3599,8 +4697,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 8.2253 },
-                      taxIncludedAmount: { unit: 'EUR', value: 9.9526 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 8.2253,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 9.9526,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3608,7 +4712,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15IZ4V',
                   name: 'Orange TV Cine y Series',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -3631,7 +4739,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -3667,8 +4778,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 25.4 },
-                  taxIncludedAmount: { unit: 'EUR', value: 30.734 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 25.4,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 30.734,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3694,7 +4811,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -3709,9 +4829,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Canales Basicos' },
-                    { name: 'Cardinalidad', value: '10' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Canales Basicos',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '10',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -3723,8 +4852,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 25.4 },
-                      taxIncludedAmount: { unit: 'EUR', value: 30.734 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 25.4,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 30.734,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3732,7 +4867,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-2X10S5',
                   name: 'TV con mas de 90 canales y todo el futbol',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -3755,7 +4894,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -3790,8 +4932,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 29.4 },
-                  taxIncludedAmount: { unit: 'EUR', value: 35.574 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 29.4,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 35.574,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3817,8 +4965,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -3833,9 +4987,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Canales Basicos' },
-                    { name: 'Cardinalidad', value: '10' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Canales Basicos',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '10',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -3847,8 +5010,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 29.4 },
-                      taxIncludedAmount: { unit: 'EUR', value: 35.574 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 29.4,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 35.574,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -3856,7 +5025,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-3KXT0P',
                   name: 'TV con mas de 90 canales, deportes y todo el futbol',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -3879,7 +5052,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -3901,12 +5077,13 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [],
             category: 'Residencial/Empresa',
-            childrenList: '',
+            childrenList:
+              '1-2QJ358,1-2H826R,1-2MZZWV,1-2U2CXX,1-25RZCB,1-2QJ18L,1-15IZ55,1-15IYUN,1-15IZ4L,1-32SAI1',
             description:
-              '<div>Con Orange podr&aacute;s disfrutar de nuestra Televisi&oacute;n que, en la actualidad, incluye los mejores contenidos de Cine y Series y tem&aacute;ticos con m&aacute;s de 90 canales, adem&aacute;s de 5 partidos cada jornada de Liga Santander 2022-2023.</div>\r\n',
+              '<div>TV con m&aacute;s de 90 canales y f&uacute;tbol 5 partidos</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>&nbsp;</div>\r\n',
             disabled: false,
             isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/100x100_Black_+90.svg',
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Icono_SVA_Orange_TV_Total.svg',
             id: '1-3KJMV7',
             isByRule: false,
             isConstraint: false,
@@ -3914,8 +5091,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 21 },
-                  taxIncludedAmount: { unit: 'EUR', value: 25.41 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 21,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 25.41,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -3925,21 +5108,25 @@ export const COMERCIALDATA = [
             ],
             licenseContracted: 0,
             licenseToContract: 0,
-            name: 'Más de 90 canales de TV para poder disfrutar en casa y además 5 partidos de Fútbol cada jornada de Liga Santander.',
+            name: 'TV con más de 90 canales y fútbol 5 partidos',
             ospTv: 'Canal Principal',
-            ospTypeChannel: 'TV',
+            ospTypeChannel: 'otros',
             price: 21,
             productSpecCharacteristic: [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -3947,756 +5134,6 @@ export const COMERCIALDATA = [
             svaChildrenList: null,
             svaProductClass: '',
             title: 'TV con más de 90 canales y Fútbol 5 partidos',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>M&aacute;s de 5.000 contenidos de Cine, Series e Infantil. Disponible s&oacute;lo para los clientes que tengan contratado Orange TV Cine y Series.&nbsp;<br />\r\n&iexcl;Prueba el primer mes gratis!&nbsp;<br />\r\nPack Disponible s&oacute;lo para clientes de Orange TV Cine y Series.&nbsp;</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Rakuten.svg',
-            id: '1-15IYUN',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.12397 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.99001 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Suscripción para ver más de 5.000 películas, series y contenido infantil',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 4.12397,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV Terceros',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Rakuten TV suscripción',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Encuentra el mejor cine espa&ntilde;ol con FlixOl&eacute;, la mayor plataforma de video bajo demanda, y el canal Somos.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Logo_FlixOle_Somos.png',
-            id: '1-2MZZWV',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 3.29 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.98091 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: ' El mejor cine español con FlixOlé & Somos',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 3.29,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV Terceros',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'FlixOlé - Somos',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Disfruta de series originales con estreno simult&aacute;neo en EEUU, temporadas completas y las mejores pel&iacute;culas de Hollywood, con las grandes estrellas del cine o el cine indie.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/StarzPlay.svg',
-            id: '1-2U2CXX',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.98521 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Series originales y películas icónicas por solo 4,99€/mes',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 4.12,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'LIONSGATE+',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>El &uacute;nico canal de TV dedicado exclusivamente a la caza. Disfruta de todas las modalidades cineg&eacute;ticas, tanto en Espa&ntilde;a como en el resto del mundo: caza mayor, caza menor, caza internacional, perros de caza y &iexcl;mucho m&aacute;s!</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Cazavision,0.svg',
-            id: '1-15IZ55',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 5.74 },
-                  taxIncludedAmount: { unit: 'EUR', value: 6.94541 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'El único canal de TV dedicado exclusivamente a la caza, ahora el primer mes gratis. ',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 5.74,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Cazavisión',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Disfrutar con la mejor m&uacute;sica cl&aacute;sica, &oacute;pera, danza, ballets y jazz 24 horas. Adem&aacute;s de una selecci&oacute;n de los mejores conciertos y m&uacute;sica en vivo.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/MusicaPremium.svg',
-            id: '1-2H826R',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.13223 },
-                  taxIncludedAmount: { unit: 'EUR', value: 5 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Disfrutar con la mejor música clásica, ópera, danza, ballets y jazz 24 horas. Además de una selección de los mejores conciertos y música en vivo.',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 4.13223,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Música Premium',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>El mundo del motor, los deportes de contacto, los deportes de riesgo, la adrenalina y la aventura en general.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Deportes_Extra2.svg',
-            id: '1-25RZCB',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.13223 },
-                  taxIncludedAmount: { unit: 'EUR', value: 5 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'El mundo del motor, los deportes de contacto, los deportes de riesgo, la adrenalina y la aventura en general.',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 4.13223,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Deportes Extra',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>El mejor contenido pensado para los m&aacute;s peque&ntilde;os de la casa, para que crezcan aprendiendo y divirti&eacute;ndose.</div>\r\n\r\n<div>Incluye dos canales: el canal preescolar Panda y Lolly Kids, el &uacute;nico canal infantil musical de la televisi&oacute;n as&iacute; como los mejores contenidos a la carta de Cartoon Network</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Infantil Max.svg',
-            id: '1-2QJ18L',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.47934 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.00001 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Canales incluidos: LollyKids, PANDA, Cartoon Network',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.47934,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Infantil Max',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Disfruta todo el contenido con directos y reportajes sobre viajes, moda y estilo de vida.</div>\r\n\r\n<div>Incluye 4 canales especializados: Fashion TV, el canal referente de las pasarelas de moda; MyZen TV, pensado para el bienestar; Escapa TV, el canal especializado en turismo y Out TV, el primer canal LGTBI en Espa&ntilde;a.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/check-out-orange-tv-lifestyle-110x110,0.png',
-            id: '1-2QJ358',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.47934 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.00001 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Canales incluidos: Fashion 4K, MyZenTV, Escapa TV, Out TV',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.47934,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Lifestyle',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Terror en estado puro en Orange TV con DARK, el &uacute;nico canal de TV 100% de Terror y Planet Horror , la &uacute;nica plataforma en Espa&ntilde;a dedicada al g&eacute;nero.&nbsp;</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/VAMPIRO_PICTO_negro.png',
-            id: '1-32SAI1',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.48 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.0008 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Canal de terror en Orange TV',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.48,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Terror',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>El canal 24/7 con los mejores programas y competiciones de eSports y toda la actualidad del mundo gaming.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/UBEAT_PORTAL_HORIZONTAL.jpg',
-            id: '1-366AQB',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.4793 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.99996 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'El canal 24/7 con los mejores contenidos de eSports.',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.4793,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'UBEAT',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Humor absurdo, acci&oacute;n, anime, superh&eacute;roes para los fans de las series m&aacute;s ca&ntilde;eras.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/AdultSwim_Toonami_Logo_100x100.jpg',
-            id: '1-2TXOEF',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.4793 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.99996 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Para los fans de las series más cañeras.',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.4793,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Adult Swim-Toonami',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Los mejores programas, series, y contenidos infantiles de la televisi&oacute;n francesa.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_306677.png',
-            id: '1-36RT14',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.4793 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.99996 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Los mejores programas de la Televisión Francesa',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.4793,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'FRANCE DIRECT',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Competiciones y programas sobre el mundo del motor para los amantes de la velocidad y del auto-tuning.&nbsp;</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_306675.png',
-            id: '1-36RSWB',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.4793 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.99996 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Para los aficionados al mundo del motor',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 2.4793,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'MOTOR',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Contenido de calidad para los amantes de las series de misterio, comedia y la mejor ficci&oacute;n brit&aacute;nica. Primer mes gratis.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_396777.png',
-            id: '1-39HEKJ',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 3.2978 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.99034 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Las mejores series de misterio, comedia y ficción británica',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 3.2978,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Acorn TV',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Residencial/Empresa',
-            childrenList: '',
-            description:
-              '<div>Movistar Series un canal exclusivo con las series m&aacute;s vistas y comerciales de cada temporada junto con ficci&oacute;n europea y de culto, con temporadas completas en V.O. y HD. Y adem&aacute;s, tambi&eacute;n en tu tablet, PC, smartphone&hellip; sin coste adicional.</div>\r\n',
-            disabled: true,
-            isbloked: false,
-            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/check-out-orange-tv-movistar-deries110x110.png',
-            id: '1-15IZ4L',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: false,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.13 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.9973 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Canal con los éxitos y grandes series de estrenos de cada temporada',
-            ospTv: 'Canal Secundario_Residencial/Empresa',
-            ospTypeChannel: 'TV',
-            price: 4.13,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
-                ],
-              },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: true,
-            subCategory: 'TV',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Series',
           },
           {
             cartItemRelationship: [],
@@ -4712,8 +5149,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 40 },
-                  taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 40,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 48.4,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -4747,10 +5190,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicio Multideco' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: 'Servicio multideco' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicio Multideco',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: 'Servicio multideco',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -4762,8 +5217,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 40 },
-                      taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 40,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 48.4,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -4794,7 +5255,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -4812,10 +5276,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Included by rule' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Included by rule',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -4827,8 +5303,14 @@ export const COMERCIALDATA = [
                     description: 'Lista_precios_calculados_pa',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -40 },
-                      taxIncludedAmount: { unit: 'EUR', value: -48.4 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -40,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -48.4,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -4839,7 +5321,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-3OQC6G' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-3OQC6G',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -4854,11 +5340,13 @@ export const COMERCIALDATA = [
                 bundledProductOffering: [
                   {
                     id: '1-3OQXV8',
+                    href: '1-31IWTA',
                     name: 'Promoción 100% cuota de alta servicio multideco',
                   },
                 ],
                 productSpecification: {
                   id: '1-3OQXV8',
+                  href: '1-31IWTA',
                   name: 'Promoción 100% cuota de alta servicio multideco',
                 },
                 productOfferingPrice: [
@@ -4869,8 +5357,8 @@ export const COMERCIALDATA = [
                     version: '1.0',
                     price: [
                       {
-                        taxIncludedAmount: 24.5993,
-                        dutyFreeAmount: 20.33,
+                        taxIncludedAmount: -48.4,
+                        dutyFreeAmount: -40,
                         taxRate: 0.21,
                         ospTaxRateName: 'IVA',
                         currencyCode: 'EUR',
@@ -4891,8 +5379,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 40 },
-                      taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 40,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 48.4,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -4907,10 +5401,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Servicio Multideco' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
-                        { name: 'KeyFeature', value: 'Servicio multideco' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Servicio Multideco',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value: 'Servicio multideco',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -4922,8 +5428,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 40 },
-                          taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 40,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 48.4,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -4954,7 +5466,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -4972,10 +5487,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Included by rule' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Included by rule',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -4987,8 +5514,14 @@ export const COMERCIALDATA = [
                         description: 'Lista_precios_calculados_pa',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -40 },
-                          taxIncludedAmount: { unit: 'EUR', value: -48.4 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -40,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -48.4,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -4999,7 +5532,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3OQC6G' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3OQC6G',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -5014,11 +5551,13 @@ export const COMERCIALDATA = [
                     bundledProductOffering: [
                       {
                         id: '1-3OQXV8',
+                        href: '1-31IWTA',
                         name: 'Promoción 100% cuota de alta servicio multideco',
                       },
                     ],
                     productSpecification: {
                       id: '1-3OQXV8',
+                      href: '1-31IWTA',
                       name: 'Promoción 100% cuota de alta servicio multideco',
                     },
                     productOfferingPrice: [
@@ -5029,8 +5568,8 @@ export const COMERCIALDATA = [
                         version: '1.0',
                         price: [
                           {
-                            taxIncludedAmount: 24.5993,
-                            dutyFreeAmount: 20.33,
+                            taxIncludedAmount: -48.4,
+                            dutyFreeAmount: -40,
                             taxRate: 0.21,
                             ospTaxRateName: 'IVA',
                             currencyCode: 'EUR',
@@ -5054,6 +5593,966 @@ export const COMERCIALDATA = [
           },
           {
             cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>M&aacute;s de 5.000 contenidos de Cine, Series e Infantil. Disponible s&oacute;lo para los clientes que tengan contratado Orange TV Cine y Series.&nbsp;<br />\r\n&iexcl;Prueba el primer mes gratis!&nbsp;<br />\r\nPack Disponible s&oacute;lo para clientes de Orange TV Cine y Series.&nbsp;</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Rakuten.svg',
+            id: '1-15IYUN',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.12397,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.99001,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Suscripción para ver más de 5.000 películas, series y contenido infantil',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 4.12397,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV Terceros',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Rakuten TV suscripción',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Encuentra el mejor cine espa&ntilde;ol con FlixOl&eacute;, la mayor plataforma de video bajo demanda, y el canal Somos.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Logo_FlixOle_Somos.png',
+            id: '1-2MZZWV',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 3.29,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.98091,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: ' El mejor cine español con FlixOlé & Somos',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 3.29,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV Terceros',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'FlixOlé - Somos',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Disfruta de series originales con estreno simult&aacute;neo en EEUU, temporadas completas y las mejores pel&iacute;culas de Hollywood, con las grandes estrellas del cine o el cine indie.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/StarzPlay.svg',
+            id: '1-2U2CXX',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.98521,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Series originales y películas icónicas por solo 4,99€/mes',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 4.12,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'LIONSGATE+',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>El &uacute;nico canal de TV dedicado exclusivamente a la caza. Disfruta de todas las modalidades cineg&eacute;ticas, tanto en Espa&ntilde;a como en el resto del mundo: caza mayor, caza menor, caza internacional, perros de caza y &iexcl;mucho m&aacute;s!</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Cazavision,0.svg',
+            id: '1-15IZ55',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 5.74,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 6.94541,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'El único canal de TV dedicado exclusivamente a la caza, ahora el primer mes gratis. ',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 5.74,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Cazavisión',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Disfrutar con la mejor m&uacute;sica cl&aacute;sica, &oacute;pera, danza, ballets y jazz 24 horas. Adem&aacute;s de una selecci&oacute;n de los mejores conciertos y m&uacute;sica en vivo.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/MusicaPremium.svg',
+            id: '1-2H826R',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.13223,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 5,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Disfrutar con la mejor música clásica, ópera, danza, ballets y jazz 24 horas. Además de una selección de los mejores conciertos y música en vivo.',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 4.13223,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Música Premium',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>El mundo del motor, los deportes de contacto, los deportes de riesgo, la adrenalina y la aventura en general.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Deportes_Extra2.svg',
+            id: '1-25RZCB',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.13223,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 5,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'El mundo del motor, los deportes de contacto, los deportes de riesgo, la adrenalina y la aventura en general.',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 4.13223,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Deportes Extra',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>El mejor contenido pensado para los m&aacute;s peque&ntilde;os de la casa, para que crezcan aprendiendo y divirti&eacute;ndose.</div>\r\n\r\n<div>Incluye dos canales: el canal preescolar Panda y Lolly Kids, el &uacute;nico canal infantil musical de la televisi&oacute;n as&iacute; como los mejores contenidos a la carta de Cartoon Network</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Infantil Max.svg',
+            id: '1-2QJ18L',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.47934,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.00001,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Canales incluidos: LollyKids, PANDA, Cartoon Network',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.47934,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Infantil Max',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Disfruta todo el contenido con directos y reportajes sobre viajes, moda y estilo de vida.</div>\r\n\r\n<div>Incluye 4 canales especializados: Fashion TV, el canal referente de las pasarelas de moda; MyZen TV, pensado para el bienestar; Escapa TV, el canal especializado en turismo y Out TV, el primer canal LGTBI en Espa&ntilde;a.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/check-out-orange-tv-lifestyle-110x110,0.png',
+            id: '1-2QJ358',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.47934,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.00001,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Canales incluidos: Fashion 4K, MyZenTV, Escapa TV, Out TV',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.47934,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Lifestyle',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Terror en estado puro en Orange TV con DARK, el &uacute;nico canal de TV 100% de Terror y Planet Horror , la &uacute;nica plataforma en Espa&ntilde;a dedicada al g&eacute;nero.&nbsp;</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/VAMPIRO_PICTO_negro.png',
+            id: '1-32SAI1',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.48,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.0008,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Canal de terror en Orange TV',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.48,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Terror',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>El canal 24/7 con los mejores programas y competiciones de eSports y toda la actualidad del mundo gaming.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/UBEAT_PORTAL_HORIZONTAL.jpg',
+            id: '1-366AQB',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.4793,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.99996,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'El canal 24/7 con los mejores contenidos de eSports.',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.4793,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'UBEAT',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Humor absurdo, acci&oacute;n, anime, superh&eacute;roes para los fans de las series m&aacute;s ca&ntilde;eras.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/AdultSwim_Toonami_Logo_100x100.jpg',
+            id: '1-2TXOEF',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.4793,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.99996,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Para los fans de las series más cañeras.',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.4793,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Adult Swim-Toonami',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Los mejores programas, series, y contenidos infantiles de la televisi&oacute;n francesa.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_306677.png',
+            id: '1-36RT14',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.4793,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.99996,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Los mejores programas de la Televisión Francesa',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.4793,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'FRANCE DIRECT',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Competiciones y programas sobre el mundo del motor para los amantes de la velocidad y del auto-tuning.&nbsp;</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_306675.png',
+            id: '1-36RSWB',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.4793,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.99996,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Para los aficionados al mundo del motor',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 2.4793,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'MOTOR',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Contenido de calidad para los amantes de las series de misterio, comedia y la mejor ficci&oacute;n brit&aacute;nica. Primer mes gratis.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/_thumb_396777.png',
+            id: '1-39HEKJ',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 3.2978,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.99034,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Las mejores series de misterio, comedia y ficción británica',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 3.2978,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Acorn TV',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Residencial/Empresa',
+            childrenList: '',
+            description:
+              '<div>Movistar Series un canal exclusivo con las series m&aacute;s vistas y comerciales de cada temporada junto con ficci&oacute;n europea y de culto, con temporadas completas en V.O. y HD. Y adem&aacute;s, tambi&eacute;n en tu tablet, PC, smartphone&hellip; sin coste adicional.</div>\r\n',
+            disabled: true,
+            isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/check-out-orange-tv-movistar-deries110x110.png',
+            id: '1-15IZ4L',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: false,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.13,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.9973,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Canal con los éxitos y grandes series de estrenos de cada temporada',
+            ospTv: 'Canal Secundario_Residencial/Empresa',
+            ospTypeChannel: 'TV',
+            price: 4.13,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
+                ],
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: true,
+            subCategory: 'TV',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Series',
+          },
+          {
+            cartItemRelationship: [],
             category: 'Empresa',
             childrenList: '',
             description:
@@ -5068,8 +6567,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 4.12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 4.98521 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 4.12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 4.98521,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5087,12 +6592,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: true,
@@ -5117,8 +6627,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 9.08 },
-                  taxIncludedAmount: { unit: 'EUR', value: 10.98681 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 9.08,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 10.98681,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5136,12 +6652,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: true,
@@ -5165,8 +6686,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.00001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.479339,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.00001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5184,11 +6711,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
-            promoSelected: null,
+            promoSelected: '1-3M5N2D',
             promotion: {
               cartItemRouter: {
                 id: '1-3M5LYL',
@@ -5199,10 +6729,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Ciberseguridad' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: 'Ciberproteccion' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Ciberseguridad',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: 'Ciberproteccion',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -5214,8 +6756,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                      taxIncludedAmount: { unit: 'EUR', value: 3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5236,7 +6784,94 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+              cartItemServicio: {
+                id: '1-3M5N2D',
+                action: '',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Promocion 1 mes',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Default',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'Null',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -3,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-3M5N2D',
+                  name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-3M5LYL',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5245,6 +6880,45 @@ export const COMERCIALDATA = [
                 ospCartItemSubtype: '',
               },
               ospTv: '',
+              productOffering: {
+                name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                isBundle: true,
+                bundledProductOffering: [
+                  {
+                    id: '1-3M5N2D',
+                    href: '1-31IWTA',
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                  },
+                ],
+                productSpecification: {
+                  id: '1-3M5N2D',
+                  href: '1-31IWTA',
+                  name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                },
+                productOfferingPrice: [
+                  {
+                    name: 'Pago único',
+                    priceType: 'Pago único',
+                    recurringChargePeriod: 'Único',
+                    version: '1.0',
+                    price: [
+                      {
+                        taxIncludedAmount: -3.00001,
+                        dutyFreeAmount: -2.479339,
+                        taxRate: 0.21,
+                        ospTaxRateName: 'IVA',
+                        currencyCode: 'EUR',
+                        priceType: 'pricePromo',
+                      },
+                    ],
+                    productOfferingPriceAlteration: {
+                      recurringChargePeriod: '1',
+                      applicationDuration: 1,
+                    },
+                    priceTypeSVA: 'Recurring',
+                  },
+                ],
+              },
             },
             promotionLists: [
               {
@@ -5254,8 +6928,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                      taxIncludedAmount: { unit: 'EUR', value: 3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5270,10 +6950,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Ciberseguridad' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
-                        { name: 'KeyFeature', value: 'Ciberproteccion' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Ciberseguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value: 'Ciberproteccion',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -5285,8 +6977,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                          taxIncludedAmount: { unit: 'EUR', value: 3 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 3,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -5307,7 +7005,94 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  cartItemServicio: {
+                    id: '1-3M5N2D',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Promocion 1 mes',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'Null',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -3,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3M5N2D',
+                      name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M5LYL',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -5316,6 +7101,266 @@ export const COMERCIALDATA = [
                     ospCartItemSubtype: '',
                   },
                   ospTv: '',
+                  productOffering: {
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                    isBundle: true,
+                    bundledProductOffering: [
+                      {
+                        id: '1-3M5N2D',
+                        href: '1-31IWTA',
+                        name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                      },
+                    ],
+                    productSpecification: {
+                      id: '1-3M5N2D',
+                      href: '1-31IWTA',
+                      name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                    },
+                    productOfferingPrice: [
+                      {
+                        name: 'Pago único',
+                        priceType: 'Pago único',
+                        recurringChargePeriod: 'Único',
+                        version: '1.0',
+                        price: [
+                          {
+                            taxIncludedAmount: -3.00001,
+                            dutyFreeAmount: -2.479339,
+                            taxRate: 0.21,
+                            ospTaxRateName: 'IVA',
+                            currencyCode: 'EUR',
+                            priceType: 'pricePromo',
+                          },
+                        ],
+                        productOfferingPriceAlteration: {
+                          recurringChargePeriod: '1',
+                          applicationDuration: 1,
+                        },
+                        priceTypeSVA: 'Recurring',
+                      },
+                    ],
+                  },
+                },
+              },
+              {
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                promotion: {
+                  cartItemRouter: {
+                    id: '1-3M5LYL',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Ciberseguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value: 'Ciberproteccion',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 3,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3M5LYL',
+                      name: 'Ciber Proteccion LOVE Pro Alta',
+                      category: [],
+                      attributes: [
+                        {
+                          name: 'Limite de licencias',
+                          value: '3',
+                          ospPropTypeCD: 'INTERVAL',
+                          ospRequired: 'Y',
+                          ospReadOnly: 'N',
+                          ospLovType: '',
+                          ospDataType: 'Text',
+                        },
+                      ],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  cartItemServicio: {
+                    id: '1-3M5N2D',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Promocion 1 mes',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'Null',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -3,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3M5N2D',
+                      name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M5LYL',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  ospTv: '',
+                  productOffering: {
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                    isBundle: true,
+                    bundledProductOffering: [
+                      {
+                        id: '1-3M5N2D',
+                        href: '1-31IWTA',
+                        name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                      },
+                    ],
+                    productSpecification: {
+                      id: '1-3M5N2D',
+                      href: '1-31IWTA',
+                      name: 'Try&Pay 1 mes Ciber Protección LOVE Pro Alta',
+                    },
+                    productOfferingPrice: [
+                      {
+                        name: 'Pago único',
+                        priceType: 'Pago único',
+                        recurringChargePeriod: 'Único',
+                        version: '1.0',
+                        price: [
+                          {
+                            taxIncludedAmount: -3.00001,
+                            dutyFreeAmount: -2.479339,
+                            taxRate: 0.21,
+                            ospTaxRateName: 'IVA',
+                            currencyCode: 'EUR',
+                            priceType: 'pricePromo',
+                          },
+                        ],
+                        productOfferingPriceAlteration: {
+                          recurringChargePeriod: '1',
+                          applicationDuration: 1,
+                        },
+                        priceTypeSVA: 'Recurring',
+                      },
+                    ],
+                  },
                 },
               },
             ],
@@ -5341,8 +7386,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5360,11 +7411,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
-            promoSelected: null,
+            promoSelected: '1-3V3IW4',
             promotion: {
               cartItemRouter: {
                 id: '1-3M5LYZ',
@@ -5375,10 +7429,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Ciberseguridad' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: 'Ciberproteccion' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Ciberseguridad',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: 'Ciberproteccion',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -5390,8 +7456,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5412,7 +7484,94 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+              cartItemServicio: {
+                id: '1-3V3IW4',
+                action: '',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Promocion 1 mes',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Default',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'SVA',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'Null',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -1.21,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-3V3IW4',
+                  name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro+ Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-3M5LYZ',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5421,6 +7580,45 @@ export const COMERCIALDATA = [
                 ospCartItemSubtype: '',
               },
               ospTv: '',
+              productOffering: {
+                name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                isBundle: true,
+                bundledProductOffering: [
+                  {
+                    id: '1-3V3IW4',
+                    href: '1-31IWTA',
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                  },
+                ],
+                productSpecification: {
+                  id: '1-3V3IW4',
+                  href: '1-31IWTA',
+                  name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                },
+                productOfferingPrice: [
+                  {
+                    name: 'Pago único',
+                    priceType: 'Pago único',
+                    recurringChargePeriod: 'Único',
+                    version: '1.0',
+                    price: [
+                      {
+                        taxIncludedAmount: -1.21,
+                        dutyFreeAmount: -1,
+                        taxRate: 0.21,
+                        ospTaxRateName: 'IVA',
+                        currencyCode: 'EUR',
+                        priceType: 'pricePromo',
+                      },
+                    ],
+                    productOfferingPriceAlteration: {
+                      recurringChargePeriod: '1',
+                      applicationDuration: 1,
+                    },
+                    priceTypeSVA: 'Recurring',
+                  },
+                ],
+              },
             },
             promotionLists: [
               {
@@ -5430,8 +7628,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5446,10 +7650,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Ciberseguridad' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '2' },
-                        { name: 'KeyFeature', value: 'Ciberproteccion' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Ciberseguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value: 'Ciberproteccion',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -5461,8 +7677,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 1 },
-                          taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 1,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 1.21,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -5483,7 +7705,94 @@ export const COMERCIALDATA = [
                         },
                       ],
                     },
-                    cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  cartItemServicio: {
+                    id: '1-3V3IW4',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Promocion 1 mes',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'Null',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -1,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -1.21,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3V3IW4',
+                      name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro+ Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M5LYZ',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -5492,6 +7801,266 @@ export const COMERCIALDATA = [
                     ospCartItemSubtype: '',
                   },
                   ospTv: '',
+                  productOffering: {
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                    isBundle: true,
+                    bundledProductOffering: [
+                      {
+                        id: '1-3V3IW4',
+                        href: '1-31IWTA',
+                        name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                      },
+                    ],
+                    productSpecification: {
+                      id: '1-3V3IW4',
+                      href: '1-31IWTA',
+                      name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                    },
+                    productOfferingPrice: [
+                      {
+                        name: 'Pago único',
+                        priceType: 'Pago único',
+                        recurringChargePeriod: 'Único',
+                        version: '1.0',
+                        price: [
+                          {
+                            taxIncludedAmount: -1.21,
+                            dutyFreeAmount: -1,
+                            taxRate: 0.21,
+                            ospTaxRateName: 'IVA',
+                            currencyCode: 'EUR',
+                            priceType: 'pricePromo',
+                          },
+                        ],
+                        productOfferingPriceAlteration: {
+                          recurringChargePeriod: '1',
+                          applicationDuration: 1,
+                        },
+                        priceTypeSVA: 'Recurring',
+                      },
+                    ],
+                  },
+                },
+              },
+              {
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                promotion: {
+                  cartItemRouter: {
+                    id: '1-3M5LYZ',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Ciberseguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'KeyFeature',
+                          value: 'Ciberproteccion',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 1,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 1.21,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3M5LYZ',
+                      name: 'Ciber Proteccion LOVE Pro+ Alta',
+                      category: [],
+                      attributes: [
+                        {
+                          name: 'Limite de licencias',
+                          value: '3',
+                          ospPropTypeCD: 'INTERVAL',
+                          ospRequired: 'Y',
+                          ospReadOnly: 'N',
+                          ospLovType: '',
+                          ospDataType: 'Text',
+                        },
+                      ],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-BLJE',
+                        type: 'Movil',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  cartItemServicio: {
+                    id: '1-3V3IW4',
+                    action: '',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Promocion 1 mes',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Default',
+                        },
+                        {
+                          name: 'Explicito',
+                          value: 'true',
+                        },
+                        {
+                          name: 'Categoria',
+                          value: 'Promotion',
+                        },
+                        {
+                          name: 'Promo Aplica A',
+                          value: 'SVA',
+                        },
+                        {
+                          name: 'Promotion Tag',
+                          value: 'Null',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -1,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -1.21,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-3V3IW4',
+                      name: 'Try&Pay 1 mes Ciber Proteccion LOVE Pro+ Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-3M5LYZ',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                  ospTv: '',
+                  productOffering: {
+                    name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                    isBundle: true,
+                    bundledProductOffering: [
+                      {
+                        id: '1-3V3IW4',
+                        href: '1-31IWTA',
+                        name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                      },
+                    ],
+                    productSpecification: {
+                      id: '1-3V3IW4',
+                      href: '1-31IWTA',
+                      name: 'Try&Pay 1 mes Ciber Protección LOVE Pro+ Alta',
+                    },
+                    productOfferingPrice: [
+                      {
+                        name: 'Pago único',
+                        priceType: 'Pago único',
+                        recurringChargePeriod: 'Único',
+                        version: '1.0',
+                        price: [
+                          {
+                            taxIncludedAmount: -1.21,
+                            dutyFreeAmount: -1,
+                            taxRate: 0.21,
+                            ospTaxRateName: 'IVA',
+                            currencyCode: 'EUR',
+                            priceType: 'pricePromo',
+                          },
+                        ],
+                        productOfferingPriceAlteration: {
+                          recurringChargePeriod: '1',
+                          applicationDuration: 1,
+                        },
+                        priceTypeSVA: 'Recurring',
+                      },
+                    ],
+                  },
                 },
               },
             ],
@@ -5518,8 +8087,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5545,7 +8120,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -5560,9 +8138,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Everywhere' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Everywhere',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -5574,8 +8161,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5583,10 +8176,19 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-3948JZ',
                   name: 'Everywhere Semanal',
-                  category: [{ name: 'Comercial ATG Postventa' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Postventa',
+                    },
+                  ],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5620,8 +8222,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0.83 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.0043 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0.83,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.0043,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5639,7 +8247,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -5654,9 +8265,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Llamadas Internacionales' },
-                    { name: 'Cardinalidad', value: '6' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Llamadas Internacionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '6',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -5668,8 +8288,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0.83 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.0043 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0.83,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.0043,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5677,10 +8303,19 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-CP9CZ0',
                   name: 'Llamadas Internac - 2014',
-                  category: [{ name: 'Comercial ATG Postventa' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Postventa',
+                    },
+                  ],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5714,8 +8349,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 3 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.63 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 3,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.63,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5733,7 +8374,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -5748,9 +8392,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Llamadas Internacionales' },
-                    { name: 'Cardinalidad', value: '6' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Llamadas Internacionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '6',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -5762,8 +8415,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 3 },
-                      taxIncludedAmount: { unit: 'EUR', value: 3.63 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3.63,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5774,7 +8433,12 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5808,8 +8472,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5827,7 +8497,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -5842,9 +8515,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Llamadas Internacionales' },
-                    { name: 'Cardinalidad', value: '6' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Llamadas Internacionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '6',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Descuento Contratable en Vuelo',
@@ -5860,8 +8542,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5869,10 +8557,19 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '7-1U5B',
                   name: 'Modulo Mundo',
-                  category: [{ name: 'Comercial ATG Postventa' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Postventa',
+                    },
+                  ],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -5898,6 +8595,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>\r\n<div>Incrementa las ventas de tus productos y servicios creando una tienda online en internet.&nbsp;</div>\r\n\r\n<div>Creamos para tu negocio una tienda online atractiva y profesional, con dise&ntilde;o personalizado, desde donde podr&aacute;s vender tus productos y servicios y que te permitir&aacute; cargar en el cat&aacute;logo hasta 100 referencias de productos. Tambi&eacute;n incluye:&nbsp;</div>\r\n\r\n<div>- Pasarelas de pago integradas.</div>\r\n\r\n<div>- Integraci&oacute;n con m&eacute;todos de env&iacute;o.</div>\r\n\r\n<div>- Presencia Digital en internet, expandiendo los datos del negocio en m&aacute;s de 50 plataformas, como Google, Facebook, Instagram, TripAdvisor&hellip;</div>\r\n\r\n<div>- Servicio SEO Premium.</div>\r\n\r\n<div>- Servicio de atenci&oacute;n al cliente que realiza modificaciones ilimitadas.</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/ECommerceEmpresas.png',
             id: '1-3V204J',
             isByRule: false,
             isConstraint: false,
@@ -5905,8 +8603,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 99 },
-                  taxIncludedAmount: { unit: 'EUR', value: 119.79 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 99,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 119.79,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -5932,8 +8636,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'Marketing Digital' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Marketing Digital',
+                  },
                 ],
               },
             ],
@@ -5948,9 +8658,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Marketing Digital' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -5967,8 +8686,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 99 },
-                      taxIncludedAmount: { unit: 'EUR', value: 119.79 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 99,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 119.79,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -5989,7 +8714,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6015,6 +8745,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>Comparte contenido y promociona tus productos y servicios en redes sociales, conectando con tus clientes y ampliando tu negocio.</div>\r\n\r\n<div>Aplicamos diferentes t&eacute;cnicas para conseguir que tu web reciba tenga una mejor posici&oacute;n en internet y reciba m&aacute;s visitas desde buscadores como Google. Tambi&eacute;n incluye:&nbsp;</div>\r\n\r\n<div>- An&aacute;lisis de palabras clave (de tu web) y de la competencia, con una propuesta de mejora realizada por un Asesor Experto.</div>\r\n\r\n<div>- SEO On-Page: optimizaciones internas en tu web para mejorar el posicionamiento.</div>\r\n\r\n<div>- Presencia Digital en internet, expandiendo los datos del negocio en m&aacute;s de 50 plataformas, como Google, Facebook, Instagram, TripAdvisor&hellip;</div>\r\n\r\n<div>- SEO Off-Page: acciones en internet fuera del entorno del sitio web para mejorar tu posicionamiento.</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/PosicionamientoWebEmpresas.png',
             id: '1-3V203J',
             isByRule: false,
             isConstraint: false,
@@ -6022,8 +8753,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 160 },
-                  taxIncludedAmount: { unit: 'EUR', value: 193.6 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 160,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 193.6,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6049,8 +8786,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'Marketing Digital' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Marketing Digital',
+                  },
                 ],
               },
             ],
@@ -6065,9 +8808,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Marketing Digital' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -6084,8 +8836,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 160 },
-                      taxIncludedAmount: { unit: 'EUR', value: 193.6 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 160,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 193.6,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6106,7 +8864,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6132,6 +8895,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>Comparte contenido y promociona tus productos y servicios en redes sociales, conectando con tus clientes y ampliando tu negocio.</div>\r\n\r\n<div>Creamos y optimizamos el perfil de tu empresa en la red social que t&uacute; elijas. Comparte tu contenido y promociones de forma sencilla, establece un canal de comunicaci&oacute;n directo con tus clientes, recibiendo sugerencias y administrando tus valoraciones. Tambi&eacute;n incluye:</div>\r\n\r\n<div>- Dise&ntilde;o de estrategia en redes sociales (Social Media Plan) realizada por un Asesor Experto Personalizado, alineada con target y objetivos establecidos con el cliente.</div>\r\n\r\n<div>- Publicaci&oacute;n por el Asesor Experto de 4 posts mensuales gen&eacute;ricos del sector de actividad.</div>\r\n\r\n<div>- Llamada semestral por parte del Asesor Experto para analizar los resultados y estrategia de redes sociales.</div>\r\n\r\n<div>- Informe mensual de indicadores relevantes.</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/RedesSocialesEmpresas.png',
             id: '1-3V2041',
             isByRule: false,
             isConstraint: false,
@@ -6139,8 +8903,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 120 },
-                  taxIncludedAmount: { unit: 'EUR', value: 145.2 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 120,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 145.2,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6166,8 +8936,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'Marketing Digital' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Marketing Digital',
+                  },
                 ],
               },
             ],
@@ -6182,9 +8958,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Marketing Digital' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -6201,8 +8986,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 120 },
-                      taxIncludedAmount: { unit: 'EUR', value: 145.2 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 120,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 145.2,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6223,7 +9014,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6249,6 +9045,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>Aumenta la visibilidad de tu negocio creando una p&aacute;gina web profesional en Internet.</div>\r\n\r\n<div>Creamos para tu negocio una p&aacute;gina web con dise&ntilde;o profesional y responsive (adaptable a todo tipo de dispositivos), autogestionable, con tu propio dominio y optimizada para posicionarse en las mejores posiciones en buscadores. Tambi&eacute;n incluye:</div>\r\n\r\n<div>- Hasta 10 p&aacute;ginas de contenido.</div>\r\n\r\n<div>- Presencia Digital en internet, expandiendo los datos del negocio en m&aacute;s de 50 plataformas, como Google, Facebook, Instagram, TripAdvisor&hellip;</div>\r\n\r\n<div>- Asesor Experto Personalizado con llamada trimestral de seguimiento con un informe con propuesta de mejoras para tu web.</div>\r\n\r\n<div>- Servicio SEO Premium.</div>\r\n\r\n<div>- Servicio de atenci&oacute;n al cliente que realiza modificaciones ilimitadas.</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/WebEmpresas.png',
             id: '1-3V2051',
             isByRule: false,
             isConstraint: false,
@@ -6256,8 +9053,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 99 },
-                  taxIncludedAmount: { unit: 'EUR', value: 119.79 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 99,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 119.79,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6283,8 +9086,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'Marketing Digital' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Marketing Digital',
+                  },
                 ],
               },
             ],
@@ -6299,13 +9108,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Marketing Digital' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
-                        'Producto unico nivel cliente,TEIDE_PROD_UNICO - Web Empresas,TEIDE_PROD_UNICO - Web Advanced',
+                        'TEIDE_PROD_UNICO - Web Empresas,Producto unico nivel cliente',
                     },
                   ],
                   relatedParty: [],
@@ -6318,8 +9136,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 99 },
-                      taxIncludedAmount: { unit: 'EUR', value: 119.79 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 99,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 119.79,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6340,7 +9164,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6366,6 +9195,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>Aumenta la visibilidad de tu negocio creando una p&aacute;gina web profesional en Internet.</div>\r\n\r\n<div>Creamos para tu negocio una p&aacute;gina web con dise&ntilde;o profesional y responsive (adaptable a todo tipo de dispositivos), autogestionable, con tu propio dominio y optimizada para posicionarse en las mejores posiciones en buscadores. Tambi&eacute;n incluye:</div>\r\n\r\n<div>- Hasta 5 p&aacute;ginas de contenido.</div>\r\n\r\n<div>- Servicio de atenci&oacute;n al cliente que realiza modificaciones ilimitadas.</div>\r\n\r\n<div>- Dise&ntilde;o responsive (adaptable y visible desde cualquier dispositivo).</div>\r\n\r\n<div>- Informe mensual con estad&iacute;sticas de tr&aacute;fico y visitas de la web.</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/WebEmpresas.png',
             id: '1-3V0DOL',
             isByRule: false,
             isConstraint: false,
@@ -6373,8 +9203,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 40 },
-                  taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 40,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 48.4,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6400,8 +9236,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'Marketing Digital' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'Marketing Digital',
+                  },
                 ],
               },
             ],
@@ -6416,9 +9258,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Marketing Digital' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Marketing Digital',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value:
@@ -6435,8 +9286,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 40 },
-                      taxIncludedAmount: { unit: 'EUR', value: 48.4 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 40,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 48.4,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6457,7 +9314,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6491,8 +9353,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 7 },
-                  taxIncludedAmount: { unit: 'EUR', value: 8.47 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 7,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 8.47,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6510,8 +9378,14 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                  { valueType: 'ospTypeChannel', value: 'TV' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                  {
+                    valueType: 'ospTypeChannel',
+                    value: 'TV',
+                  },
                 ],
               },
             ],
@@ -6526,15 +9400,30 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Servicios Profesionales' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Profesionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                     {
                       name: 'KeyFeature',
                       value: 'Producto unico nivel cliente',
                     },
-                    { name: 'Licencias Contratadas', value: '0' },
-                    { name: 'Licencias Contratadas Anterior', value: '0' },
+                    {
+                      name: 'Licencias Contratadas',
+                      value: '0',
+                    },
+                    {
+                      name: 'Licencias Contratadas Anterior',
+                      value: '0',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -6546,8 +9435,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 7 },
-                      taxIncludedAmount: { unit: 'EUR', value: 8.47 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 7,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 8.47,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6577,7 +9472,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6611,8 +9511,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.95001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.438017,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.95001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6630,7 +9536,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -6645,10 +9554,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Smart SIM+' },
-                    { name: 'Cardinalidad', value: '4' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: '4G' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Smart SIM+',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '4',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: '4G',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -6660,8 +9581,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.438017,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6669,7 +9596,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15UBA2',
                   name: 'MultiSIM 1',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Estado',
@@ -6683,7 +9614,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6717,8 +9653,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.95001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.438017,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.95001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6736,7 +9678,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -6751,10 +9696,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Smart SIM+' },
-                    { name: 'Cardinalidad', value: '4' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: '4G' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Smart SIM+',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '4',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: '4G',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -6766,8 +9723,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.438017,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6775,7 +9738,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15UBB6',
                   name: 'MultiSIM 2',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Estado',
@@ -6789,7 +9756,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6823,8 +9795,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.95001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.438017,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.95001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6842,7 +9820,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -6857,10 +9838,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Smart SIM+' },
-                    { name: 'Cardinalidad', value: '4' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: '4G' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Smart SIM+',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '4',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: '4G',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -6872,8 +9865,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.438017,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6881,7 +9880,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15UBBN',
                   name: 'MultiSIM 3',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Estado',
@@ -6895,7 +9898,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -6929,8 +9937,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.95001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.438017,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.95001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -6948,7 +9962,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -6963,10 +9980,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Smart SIM+' },
-                    { name: 'Cardinalidad', value: '4' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'KeyFeature', value: '4G' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Smart SIM+',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '4',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'KeyFeature',
+                      value: '4G',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -6978,8 +10007,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.438017 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2.95 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.438017,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2.95,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -6987,7 +10022,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15UBC4',
                   name: 'MultiSIM 4',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Estado',
@@ -7001,7 +10040,12 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -7035,8 +10079,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1.9 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2.299 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1.9,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2.299,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7054,7 +10104,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -7069,9 +10122,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Tranquilidad' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Tranquilidad',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -7083,8 +10145,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1.9 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2.299 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1.9,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2.299,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -7092,10 +10160,19 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '7-1T4E',
                   name: 'Tranquilidad',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -7129,8 +10206,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7156,12 +10239,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7186,8 +10274,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0,
                 },
@@ -7213,12 +10307,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7243,8 +10342,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0,
                 },
@@ -7270,12 +10375,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7300,8 +10410,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0,
                 },
@@ -7319,12 +10435,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7348,8 +10469,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 5 },
-                  taxIncludedAmount: { unit: 'EUR', value: 6.05 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 5,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 6.05,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7367,12 +10494,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: true,
@@ -7389,6 +10521,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>Navega seguro por internet protegiendo las l&iacute;neas m&oacute;viles y dispositivos de tu empresa</div>\r\n\r\n<div>Ciber Protecci&oacute;n protege todas las l&iacute;neas m&oacute;viles de tu tarifa LOVE y los dispositivos de tu empresa proporcionando una experiencia segura en Internet,&nbsp;<br />\r\nprotegiendo la navegaci&oacute;n (protecci&oacute;n frente a malware, phishing y otros ataques),&nbsp;<br />\r\nprotegiendo la privacidad (chequeo de identidad) y&nbsp;<br />\r\nProtegiendo las compras/transacciones online (chequeo de webs seguras).&nbsp;</div>\r\n\r\n<div>Ciber Protecci&oacute;n es un servicio que inmediatamente tras la contrataci&oacute;n proteger&aacute; la navegaci&oacute;n por internet de las l&iacute;neas m&oacute;viles que tengan activado el servicio. Sin necesidad de instalar nada en los dispositivos.</div>\r\n\r\n<div>Adicionalmente, tendr&aacute;s acceso a un portal de gesti&oacute;n en el que podr&aacute;s;<br />\r\nConsultar el hist&oacute;rico de bloqueos en todas las l&iacute;neas de tus empleados<br />\r\nBloquear y chequear webs sospechosas<br />\r\nEstablecer filtros de contenido y horarios en los que se apliquen (ejemplo; evitar webs de apuestas deportivas en horario laboral, bloquear navegaci&oacute;n en webs de determindados contenidos,&hellip;)<br />\r\nBloquear Aplicaciones<br />\r\nChequear y monitorizar los riesgos de las cuentas de correo&nbsp;</div>\r\n\r\n<div>Si adem&aacute;s, quieres proteger la navegaci&oacute;n de tus dispositivos cuando est&eacute;n conectados por Wifi, podr&aacute;s descargar la aplicaci&oacute;n de Ciber Protecci&oacute;n que permitir&aacute; a ti y a tus empleados seguir protegidos fuera de la red m&oacute;vil de Orange. Incluye adicionalmente un antivirus para tus dispositivos Android.</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Ciberproteccion.svg',
             id: '1-3M5LZD',
             isByRule: false,
             isConstraint: false,
@@ -7396,8 +10529,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                  taxIncludedAmount: { unit: 'EUR', value: 3.00001 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 2.479339,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 3.00001,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7415,12 +10554,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7437,6 +10581,7 @@ export const COMERCIALDATA = [
               '<div>\r\n<div>\r\n<div>\r\n<div>Navega seguro por internet protegiendo las l&iacute;neas m&oacute;viles y dispositivos de tu empresa</div>\r\n\r\n<div>Ciber Protecci&oacute;n protege todas las l&iacute;neas m&oacute;viles de tu tarifa LOVE y los dispositivos de tu empresa proporcionando una experiencia segura en Internet,&nbsp;<br />\r\nprotegiendo la navegaci&oacute;n (protecci&oacute;n frente a malware, phishing y otros ataques),&nbsp;<br />\r\nprotegiendo la privacidad (chequeo de identidad) y&nbsp;<br />\r\nProtegiendo las compras/transacciones online (chequeo de webs seguras).&nbsp;</div>\r\n\r\n<div>Ciber Protecci&oacute;n es un servicio que inmediatamente tras la contrataci&oacute;n proteger&aacute; la navegaci&oacute;n por internet de las l&iacute;neas m&oacute;viles que tengan activado el servicio. Sin necesidad de instalar nada en los dispositivos.</div>\r\n\r\n<div>Adicionalmente, tendr&aacute;s acceso a un portal de gesti&oacute;n en el que podr&aacute;s;<br />\r\nConsultar el hist&oacute;rico de bloqueos en todas las l&iacute;neas de tus empleados<br />\r\nBloquear y chequear webs sospechosas<br />\r\nEstablecer filtros de contenido y horarios en los que se apliquen (ejemplo; evitar webs de apuestas deportivas en horario laboral, bloquear navegaci&oacute;n en webs de determindados contenidos,&hellip;)<br />\r\nBloquear Aplicaciones<br />\r\nChequear y monitorizar los riesgos de las cuentas de correo&nbsp;</div>\r\n\r\n<div>Si adem&aacute;s, quieres proteger la navegaci&oacute;n de tus dispositivos cuando est&eacute;n conectados por Wifi, podr&aacute;s descargar la aplicaci&oacute;n de Ciber Protecci&oacute;n que permitir&aacute; a ti y a tus empleados seguir protegidos fuera de la red m&oacute;vil de Orange. Incluye adicionalmente un antivirus para tus dispositivos Android.</div>\r\n</div>\r\n</div>\r\n</div>\r\n',
             disabled: false,
             isbloked: false,
+            href: 'https://catalogo-uat2.int.si.orange.es/catalogo/Imagenes/SVAs/Ciberproteccion.svg',
             id: '1-3M5M06',
             isByRule: false,
             isConstraint: false,
@@ -7444,8 +10589,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7463,12 +10614,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -7493,8 +10649,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7512,7 +10674,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -7524,16 +10689,25 @@ export const COMERCIALDATA = [
                 status: '',
                 cartItem: [],
                 product: {
-                  name: 'Llamadas internacionales',
-                  description:
-                    '<div>M&oacute;dulo para usar los minutos de la tarifa plana para llamar tambi&eacute;n a n&uacute;meros fijos Internacionales</div>\r\n',
-                  productRelationship: [{ type: 'SVA' }],
+                  productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'IdUnico', value: '1-34Q2TX-1' },
-                    { name: 'IdUnicoPadre', value: '1-244QJP-1' },
-                    { name: 'Included by constraint', value: 'true' },
-                    { name: 'ProductClass', value: 'Bonos Internacionales' },
+                    {
+                      name: 'IdUnico',
+                      value: '1-34Q2TX-1',
+                    },
+                    {
+                      name: 'IdUnicoPadre',
+                      value: '1-244QJP-1',
+                    },
+                    {
+                      name: 'Included by constraint',
+                      value: 'true',
+                    },
+                    {
+                      name: 'ProductClass',
+                      value: 'Bonos Internacionales',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -7545,8 +10719,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                       taxRate: 0.21,
                     },
                     priceAlteration: [
@@ -7555,8 +10735,14 @@ export const COMERCIALDATA = [
                         priceType: 'Recurring',
                         priority: 1,
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                           taxRate: 0.21,
                         },
                       },
@@ -7566,7 +10752,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-34Q2TX',
                   name: 'Bono Internacional 1000 min',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -7579,7 +10769,11 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-244QJP-1' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP-1',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: true,
                 ospMandatory: true,
@@ -7613,8 +10807,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1.65289,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7632,7 +10832,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -7644,15 +10847,21 @@ export const COMERCIALDATA = [
                 status: '',
                 cartItem: [],
                 product: {
-                  name: 'Identificacion de Llamadas',
-                  description:
-                    '<div>\r\n<div>Identificacion de Llamadas</div>\r\n</div>\r\n',
-                  productRelationship: [{ type: 'SVA' }],
+                  productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'IdUnico', value: '1-15IZBH-1' },
-                    { name: 'IdUnicoPadre', value: '1-244QJP-1' },
-                    { name: 'ProductClass', value: 'Servicios Configurables' },
+                    {
+                      name: 'IdUnico',
+                      value: '1-15IZBH-1',
+                    },
+                    {
+                      name: 'IdUnicoPadre',
+                      value: '1-244QJP-1',
+                    },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Configurables',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -7664,8 +10873,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1.65289,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2,
+                      },
                       taxRate: 0.21,
                     },
                     priceAlteration: [
@@ -7674,8 +10889,14 @@ export const COMERCIALDATA = [
                         priceType: 'Recurring',
                         priority: 1,
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                          taxIncludedAmount: { unit: 'EUR', value: 2 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 1.65289,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 2,
+                          },
                           taxRate: 0.21,
                         },
                       },
@@ -7685,7 +10906,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15IZBH',
                   name: 'Identificacion de Llamadas',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -7698,7 +10923,11 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-244QJP-1' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP-1',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -7733,8 +10962,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 30 },
-                  taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 30,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 36.3,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -7752,7 +10987,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -7767,9 +11005,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Bonos Nacionales' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Bonos Nacionales',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -7781,8 +11028,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 30 },
-                      taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 30,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 36.3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -7804,7 +11057,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -7822,11 +11078,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Included by rule' },
-                    { name: 'Secuencia', value: '10' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Included by rule',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -7838,8 +11105,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -29.17 },
-                      taxIncludedAmount: { unit: 'EUR', value: -35.2957 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -29.17,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -35.2957,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -7850,7 +11123,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-15IZ41' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-15IZ41',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -7905,8 +11182,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 30 },
-                      taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 30,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 36.3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -7921,9 +11204,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Bonos Nacionales' },
-                        { name: 'Cardinalidad', value: '5' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Bonos Nacionales',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '5',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -7935,8 +11227,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 30 },
-                          taxIncludedAmount: { unit: 'EUR', value: 36.3 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 30,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 36.3,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -7958,7 +11256,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -7976,11 +11277,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Included by rule' },
-                        { name: 'Secuencia', value: '10' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Included by rule',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -7992,8 +11304,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -29.17 },
-                          taxIncludedAmount: { unit: 'EUR', value: -35.2957 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -29.17,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -35.2957,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8004,7 +11322,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-15IZ41' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-15IZ41',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -8075,8 +11397,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -8108,7 +11436,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -8127,8 +11458,14 @@ export const COMERCIALDATA = [
                       name: 'ProductClass',
                       value: 'Equipamiento - envio logistico',
                     },
-                    { name: 'Cardinalidad', value: '15' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'Cardinalidad',
+                      value: '15',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -8140,8 +11477,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8149,7 +11492,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-39PMVR',
                   name: 'Descodificador Infinity HomeBox',
-                  category: [{ name: 'IPTV_COMPATIBLE_STB' }],
+                  category: [
+                    {
+                      name: 'IPTV_COMPATIBLE_STB',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -8172,7 +11519,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -8191,8 +11541,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8211,8 +11567,14 @@ export const COMERCIALDATA = [
                           name: 'ProductClass',
                           value: 'Equipamiento - envio logistico',
                         },
-                        { name: 'Cardinalidad', value: '15' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'Cardinalidad',
+                          value: '15',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -8224,8 +11586,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8233,7 +11601,11 @@ export const COMERCIALDATA = [
                     productOffering: {
                       id: '1-39PMVR',
                       name: 'Descodificador Infinity HomeBox',
-                      category: [{ name: 'IPTV_COMPATIBLE_STB' }],
+                      category: [
+                        {
+                          name: 'IPTV_COMPATIBLE_STB',
+                        },
+                      ],
                       attributes: [
                         {
                           name: 'Promocion Base',
@@ -8256,7 +11628,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -8275,8 +11650,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8295,8 +11676,14 @@ export const COMERCIALDATA = [
                           name: 'ProductClass',
                           value: 'Equipamiento - envio logistico',
                         },
-                        { name: 'Cardinalidad', value: '15' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'Cardinalidad',
+                          value: '15',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -8308,8 +11695,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8317,7 +11710,11 @@ export const COMERCIALDATA = [
                     productOffering: {
                       id: '1-39PMVR',
                       name: 'Descodificador Infinity HomeBox',
-                      category: [{ name: 'IPTV_COMPATIBLE_STB' }],
+                      category: [
+                        {
+                          name: 'IPTV_COMPATIBLE_STB',
+                        },
+                      ],
                       attributes: [
                         {
                           name: 'Promocion Base',
@@ -8340,7 +11737,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -8375,8 +11775,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -8402,7 +11808,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -8417,9 +11826,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'IP Fija Virtual Box',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -8431,8 +11849,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 12 },
-                      taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8454,7 +11878,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -8473,8 +11900,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 12 },
-                      taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8489,9 +11922,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                        { name: 'Cardinalidad', value: '3' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'IP Fija Virtual Box',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '3',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -8503,8 +11945,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 12 },
-                          taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 12,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 14.52,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8526,7 +11974,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -8561,8 +12012,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 80 },
-                  taxIncludedAmount: { unit: 'EUR', value: 96.8 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 80,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 96.8,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -8588,7 +12045,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -8603,9 +12063,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'IP Fija Virtual Box',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -8617,8 +12086,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 80 },
-                      taxIncludedAmount: { unit: 'EUR', value: 96.8 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 80,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 96.8,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8640,7 +12115,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -8658,10 +12136,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Included by rule' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Included by rule',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -8673,8 +12163,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -80 },
-                      taxIncludedAmount: { unit: 'EUR', value: -96.8 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -80,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -96.8,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8685,7 +12181,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-35DUSI' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-35DUSI',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -8740,8 +12240,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 80 },
-                      taxIncludedAmount: { unit: 'EUR', value: 96.8 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 80,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 96.8,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8756,9 +12262,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                        { name: 'Cardinalidad', value: '3' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'IP Fija Virtual Box',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '3',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -8770,8 +12285,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 80 },
-                          taxIncludedAmount: { unit: 'EUR', value: 96.8 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 80,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 96.8,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8793,7 +12314,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -8811,10 +12335,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Included by rule' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Included by rule',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -8826,8 +12362,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -80 },
-                          taxIncludedAmount: { unit: 'EUR', value: -96.8 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -80,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -96.8,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -8838,7 +12380,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-35DUSI' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-35DUSI',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -8909,8 +12455,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 50 },
-                  taxIncludedAmount: { unit: 'EUR', value: 60.5 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 50,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 60.5,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -8936,7 +12488,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -8951,9 +12506,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                    { name: 'Cardinalidad', value: '3' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'IP Fija Virtual Box',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '3',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -8965,8 +12529,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 50 },
-                      taxIncludedAmount: { unit: 'EUR', value: 60.5 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 50,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 60.5,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -8988,7 +12558,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9006,10 +12579,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Included by rule' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Included by rule',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9021,8 +12606,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -50 },
-                      taxIncludedAmount: { unit: 'EUR', value: -60.5 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -50,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -60.5,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9033,7 +12624,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-35DUN4' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-35DUN4',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -9088,8 +12683,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 50 },
-                      taxIncludedAmount: { unit: 'EUR', value: 60.5 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 50,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 60.5,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9104,9 +12705,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'IP Fija Virtual Box' },
-                        { name: 'Cardinalidad', value: '3' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'IP Fija Virtual Box',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '3',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -9118,8 +12728,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 50 },
-                          taxIncludedAmount: { unit: 'EUR', value: 60.5 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 50,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 60.5,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -9141,7 +12757,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -9159,10 +12778,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Included by rule' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Included by rule',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -9174,8 +12805,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: -50 },
-                          taxIncludedAmount: { unit: 'EUR', value: -60.5 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: -50,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: -60.5,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -9186,7 +12823,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-35DUN4' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-35DUN4',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -9257,8 +12898,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 10 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.1 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 10,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 12.1,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -9276,7 +12923,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -9291,9 +12941,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Seguridad' },
-                    { name: 'Cardinalidad', value: '2' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Seguridad',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '2',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9305,8 +12964,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 10 },
-                      taxIncludedAmount: { unit: 'EUR', value: 12.1 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 10,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 12.1,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9328,7 +12993,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9362,8 +13030,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 15 },
-                  taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 15,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 18.15,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -9388,7 +13062,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -9403,9 +13080,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Seguridad' },
-                    { name: 'Cardinalidad', value: '2' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Seguridad',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '2',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9417,8 +13103,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 15 },
-                      taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 15,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 18.15,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9440,7 +13132,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9459,8 +13154,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 15 },
-                      taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 15,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 18.15,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9475,9 +13176,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Seguridad' },
-                        { name: 'Cardinalidad', value: '2' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Seguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '2',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -9489,8 +13199,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 15 },
-                          taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 15,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 18.15,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -9512,7 +13228,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -9531,8 +13250,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 15 },
-                      taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 15,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 18.15,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9547,9 +13272,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Seguridad' },
-                        { name: 'Cardinalidad', value: '2' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Seguridad',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '2',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -9561,8 +13295,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 15 },
-                          taxIncludedAmount: { unit: 'EUR', value: 18.15 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 15,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 18.15,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -9584,7 +13324,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -9619,8 +13362,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 20 },
-                  taxIncludedAmount: { unit: 'EUR', value: 24.2 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 20,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 24.2,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -9638,7 +13387,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -9653,9 +13405,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'SuperLAN' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'SuperLAN',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9667,8 +13428,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 20 },
-                      taxIncludedAmount: { unit: 'EUR', value: 24.2 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 20,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 24.2,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9690,7 +13457,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9725,8 +13495,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -9744,7 +13520,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -9759,9 +13538,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Tu Experto Orange' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Tu Experto Orange',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9773,8 +13561,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9805,7 +13599,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9839,8 +13636,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -9872,7 +13675,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
             ],
@@ -9887,9 +13693,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Repetidores' },
-                    { name: 'Cardinalidad', value: '5' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Repetidores',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '5',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9901,8 +13716,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9910,7 +13731,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-3DKGDX',
                   name: 'Repetidor WI-FI 6 Premium',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -9933,7 +13758,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -9951,11 +13779,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '3' },
-                    { name: 'Promotion option', value: 'Included by rule' },
-                    { name: 'Secuencia', value: '1' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '3',
+                    },
+                    {
+                      name: 'Promotion option',
+                      value: 'Included by rule',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -9967,8 +13806,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                      taxIncludedAmount: { unit: 'EUR', value: 3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9978,8 +13823,14 @@ export const COMERCIALDATA = [
                       'Lista de precios de la Cuota mensual del servicio',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                      taxIncludedAmount: { unit: 'EUR', value: 3 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 2.479339,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 3,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -9990,7 +13841,11 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-3DKGDX' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-3DKGDX',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -10003,7 +13858,10 @@ export const COMERCIALDATA = [
                 name: 'Servicio Wi-Fi Premium',
                 isBundle: true,
                 bundledProductOffering: [
-                  { id: '1-3DGPUL', name: 'Servicio Wi-Fi Premium' },
+                  {
+                    id: '1-3DGPUL',
+                    name: 'Servicio Wi-Fi Premium',
+                  },
                 ],
                 productSpecification: {
                   id: '1-3DGPUL',
@@ -10042,8 +13900,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10058,9 +13922,18 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Repetidores' },
-                        { name: 'Cardinalidad', value: '5' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Repetidores',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '5',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -10072,8 +13945,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -10081,7 +13960,11 @@ export const COMERCIALDATA = [
                     productOffering: {
                       id: '1-3DKGDX',
                       name: 'Repetidor WI-FI 6 Premium',
-                      category: [{ name: 'Comercial ATG Orange' }],
+                      category: [
+                        {
+                          name: 'Comercial ATG Orange',
+                        },
+                      ],
                       attributes: [
                         {
                           name: 'Promocion Base',
@@ -10104,7 +13987,10 @@ export const COMERCIALDATA = [
                       ],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -10122,11 +14008,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Promociones' },
-                        { name: 'Cardinalidad', value: '1' },
-                        { name: 'Nivel', value: '3' },
-                        { name: 'Promotion option', value: 'Included by rule' },
-                        { name: 'Secuencia', value: '1' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Promociones',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '1',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '3',
+                        },
+                        {
+                          name: 'Promotion option',
+                          value: 'Included by rule',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -10138,8 +14035,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                          taxIncludedAmount: { unit: 'EUR', value: 3 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 3,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -10149,8 +14052,14 @@ export const COMERCIALDATA = [
                           'Lista de precios de la Cuota mensual del servicio',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 2.479339 },
-                          taxIncludedAmount: { unit: 'EUR', value: 3 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 2.479339,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 3,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -10161,7 +14070,11 @@ export const COMERCIALDATA = [
                       category: [],
                       attributes: [],
                     },
-                    cartItemRelationship: [{ id: '1-3DKGDX' }],
+                    cartItemRelationship: [
+                      {
+                        id: '1-3DKGDX',
+                      },
+                    ],
                     ospSelected: false,
                     ospSelectable: false,
                     ospMandatory: false,
@@ -10174,7 +14087,10 @@ export const COMERCIALDATA = [
                     name: 'Servicio Wi-Fi Premium',
                     isBundle: true,
                     bundledProductOffering: [
-                      { id: '1-3DGPUL', name: 'Servicio Wi-Fi Premium' },
+                      {
+                        id: '1-3DGPUL',
+                        name: 'Servicio Wi-Fi Premium',
+                      },
                     ],
                     productSpecification: {
                       id: '1-3DGPUL',
@@ -10230,8 +14146,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10257,12 +14179,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: true,
@@ -10287,8 +14214,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 29.95 },
-                  taxIncludedAmount: { unit: 'EUR', value: 36.2395 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 29.95,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 36.2395,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10306,12 +14239,17 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: true,
@@ -10334,8 +14272,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 9.9174 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.00006 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 9.9174,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 12.00006,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10361,9 +14305,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'IP Fija' },
-                    { name: 'Cardinalidad', value: '2' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'IP Fija',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '2',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10375,8 +14328,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 9.9174 },
-                      taxIncludedAmount: { unit: 'EUR', value: 12.0001 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 9.9174,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 12.0001,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10398,7 +14357,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -10430,12 +14392,22 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: -1 },
-                  taxIncludedAmount: { unit: 'EUR', value: -1 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: -1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: -1,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0,
                 },
-                priceAlteration: [{ applicationDuration: 24 }],
+                priceAlteration: [
+                  {
+                    applicationDuration: 24,
+                  },
+                ],
                 priceType: 'Recurring',
               },
             ],
@@ -10470,13 +14442,34 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones One2One' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'Tariff' },
-                    { name: 'Promotion Tag', value: 'Null' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones One2One',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'Tariff',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'Null',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10488,8 +14481,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -1 },
-                      taxIncludedAmount: { unit: 'EUR', value: -1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -1.21,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10500,7 +14499,12 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -10529,12 +14533,22 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: -3 },
-                  taxIncludedAmount: { unit: 'EUR', value: -3 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: -3,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: -3,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0,
                 },
-                priceAlteration: [{ applicationDuration: 24 }],
+                priceAlteration: [
+                  {
+                    applicationDuration: 24,
+                  },
+                ],
                 priceType: 'Recurring',
               },
             ],
@@ -10569,13 +14583,34 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Promociones One2One' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
-                    { name: 'Explicito', value: 'true' },
-                    { name: 'Categoria', value: 'Promotion' },
-                    { name: 'Promo Aplica A', value: 'Tariff' },
-                    { name: 'Promotion Tag', value: 'Null' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Promociones One2One',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'Explicito',
+                      value: 'true',
+                    },
+                    {
+                      name: 'Categoria',
+                      value: 'Promotion',
+                    },
+                    {
+                      name: 'Promo Aplica A',
+                      value: 'Tariff',
+                    },
+                    {
+                      name: 'Promotion Tag',
+                      value: 'Null',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10587,8 +14622,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: -3 },
-                      taxIncludedAmount: { unit: 'EUR', value: -3.63 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: -3,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: -3.63,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10599,7 +14640,12 @@ export const COMERCIALDATA = [
                   category: [],
                   attributes: [],
                 },
-                cartItemRelationship: [{ id: '1-BLJE', type: 'Movil' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-BLJE',
+                    type: 'Movil',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -10630,8 +14676,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 25 },
-                  taxIncludedAmount: { unit: 'EUR', value: 30.25 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 25,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 30.25,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10657,7 +14709,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -10672,9 +14727,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Centralita' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Centralita',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10686,8 +14750,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 25 },
-                      taxIncludedAmount: { unit: 'EUR', value: 30.25 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 25,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 30.25,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10718,7 +14788,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -10751,8 +14824,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10770,18 +14849,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '50' },
-              { name: 'order-centrex', description: '11' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '11',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -10804,8 +14906,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10823,18 +14931,123 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '50' },
-              { name: 'order-centrex', description: '13' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '13',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Numeraciones DDI Portabilidades',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Empresa',
+            childrenList: '',
+            description: '<div>Numeraciones DDI Portabilidades</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-369LC9',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Numeraciones DDI Portabilidades',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 1,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '13',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -10854,9 +15067,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10868,8 +15094,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10881,7 +15113,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -10903,8 +15138,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -10922,18 +15163,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '1' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '6' },
+              {
+                name: 'max-centrex-items',
+                description: '1',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '6',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -10942,11 +15206,10 @@ export const COMERCIALDATA = [
             svaProductClass: '',
             title: 'Básico DEC+base',
           },
-          null,
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-2',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -10954,9 +15217,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -10968,8 +15244,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -10981,7 +15263,319 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Inal&aacute;mbrico DEC</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VC5KX',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: null,
+            licenseToContract: 0,
+            name: 'Inalámbrico DEC',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 12,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '7',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'order-centrex',
+                description: '7',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Inalámbrico DEC',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAPP-6',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'One-Time',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAPP',
+                  name: 'Puesto Fijo Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto avanzado IP (2021)</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-34ROOG',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 19,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 22.99,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto avanzado IP (2021)',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 19,
+            productSpecCharacteristic: [
+              {
+                name: 'equipmentTuring',
+                ospCategory: 'cdvcharacteristic',
+                description: 'Puesto Fijo Avanzado Centralita Love Empresa',
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [],
+              },
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '1',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '4',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Puesto avanzado IP (2021)',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAPP-6',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'One-Time',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAPP',
+                  name: 'Puesto Fijo Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -11004,8 +15598,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 10 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.1 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 10,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 12.1,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11023,18 +15623,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '5' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '5',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11046,7 +15669,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-6',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -11054,9 +15677,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -11068,8 +15704,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -11081,107 +15723,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
-                ],
-                ospSelected: false,
-                ospSelectable: false,
-                ospMandatory: false,
-                ospObjectType: '',
-                ospCartItemType: '',
-                ospCartItemSubtype: '',
-              },
-            ],
-            category: 'Empresa',
-            childrenList: '',
-            description:
-              '<div>Puesto Fijo B&aacute;sico IP</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-            disabled: false,
-            isbloked: false,
-            id: '1-2VC5L6',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: true,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 10 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.1 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Puesto Fijo Básico IP',
-            ospTv: 'Centrex_Fijo',
-            ospTypeChannel: 'otros',
-            price: 10,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                ],
-              },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '5' },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: false,
-            subCategory: 'Centrex',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Básico IP',
-          },
-          {
-            cartItemRelationship: [
-              {
-                id: '1-2VCAPP-5',
-                action: 'New',
-                status: '',
-                cartItem: [],
-                product: {
-                  productRelationship: [],
-                  place: [],
-                  characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
-                  ],
-                  relatedParty: [],
-                  productSpecification: [],
-                  attachment: [],
-                },
-                itemPrice: [
                   {
-                    name: 'Orange',
-                    description: 'Lista de Precios de Orange',
-                    priceType: 'One-Time',
-                    price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
-                    },
-                    priceAlteration: [],
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
                   },
-                ],
-                productOffering: {
-                  id: '1-2VCAPP',
-                  name: 'Puesto Fijo Alta',
-                  category: [],
-                  attributes: [],
-                },
-                cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -11204,8 +15749,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 33 },
-                  taxIncludedAmount: { unit: 'EUR', value: 39.93 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 33,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 39.93,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11223,18 +15774,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '8' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '8',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11246,7 +15820,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-6',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -11254,9 +15828,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -11268,8 +15855,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -11281,7 +15874,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -11304,8 +15900,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 23 },
-                  taxIncludedAmount: { unit: 'EUR', value: 27.83 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 23,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 27.83,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11323,18 +15925,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '9' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '9',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11358,8 +15983,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11377,18 +16008,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '1' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '1',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11412,8 +16066,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11431,18 +16091,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '1' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '1',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11466,8 +16149,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11485,18 +16174,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '2',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11520,8 +16232,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11539,72 +16257,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: false,
-            subCategory: 'Centrex',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Móvil avanzado',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Empresa',
-            childrenList: '',
-            description:
-              '<div>Puesto M&oacute;vil Avanzado</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-            disabled: false,
-            isbloked: false,
-            id: '1-2VX9F1',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: true,
-            itemPrice: [
               {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '2',
               },
             ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Puesto Móvil Avanzado',
-            ospTv: 'Centrex_Móvil',
-            ospTypeChannel: 'otros',
-            price: 6,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                ],
-              },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
-            ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11616,7 +16303,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAQH-1',
+                id: '1-2VCAQH-3',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -11624,9 +16311,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Terceros' },
-                    { name: 'Cardinalidad', value: '99' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -11638,8 +16338,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -11651,7 +16357,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -11674,8 +16383,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11693,17 +16408,331 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '3' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Móvil terceros',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAQH-3',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAQH',
+                  name: 'Puesto Movil Terceros Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VCBGZ',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto Móvil terceros',
+            ospTv: 'Centrex_Terceros',
+            ospTypeChannel: 'otros',
+            price: 6,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Móvil terceros',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAQH-3',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAQH',
+                  name: 'Puesto Movil Terceros Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VCBGZ',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto Móvil terceros',
+            ospTv: 'Centrex_Terceros',
+            ospTypeChannel: 'otros',
+            price: 6,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11727,8 +16756,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 90 },
-                  taxIncludedAmount: { unit: 'EUR', value: 108.9 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 90,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 108.9,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -11746,18 +16781,124 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '4' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '4' },
-              { name: 'order-centrex', description: '15' },
+              {
+                name: 'max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'order-centrex',
+                description: '15',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Número de Switch',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>N&uacute;mero de Switch</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VENTG',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 90,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 108.9,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'One-Time',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Número de Switch',
+            ospTv: 'Centrex_Equipamiento',
+            ospTypeChannel: 'otros',
+            price: 90,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'order-centrex',
+                description: '15',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -11787,8 +16928,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -11806,18 +16953,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'false' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'false',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '50' },
-                  { name: 'order-centrex', description: '11' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '50',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '11',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -11845,8 +17015,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1 },
-                      taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -11864,18 +17040,128 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'false' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'false',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '50' },
-                  { name: 'order-centrex', description: '13' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '50',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '13',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
+                promotionLists: [],
+                realId: '',
+                show: false,
+                subCategory: 'Centrex',
+                svaChildrenList: null,
+                svaProductClass: '',
+                title: 'Numeraciones DDI Portabilidades',
+              },
+            },
+            {
+              currentCM: null,
+              idCentrex: 0,
+              opcion: [],
+              line: {
+                cartItemRelationship: [],
+                category: 'Empresa',
+                childrenList: '',
+                description: '<div>Numeraciones DDI Portabilidades</div>\r\n',
+                disabled: false,
+                isbloked: false,
+                id: '1-369LC9',
+                isByRule: false,
+                isConstraint: false,
+                isSelected: true,
+                itemPrice: [
+                  {
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 1.21,
+                      },
+                      ospTaxRateName: 'IVA',
+                      taxRate: 0.21,
+                    },
+                    priceAlteration: [],
+                    priceType: 'Recurring',
+                  },
+                ],
+                licenseContracted: 0,
+                licenseToContract: 0,
+                name: 'Numeraciones DDI Portabilidades',
+                ospTv: 'Centrex_Fijo',
+                ospTypeChannel: 'otros',
+                price: 1,
+                productSpecCharacteristic: [
+                  {
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [
+                      {
+                        valueType: 'lossNotify',
+                        value: 'false',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '50',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '13',
+                  },
+                ],
+                promoSelected: null,
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -11900,9 +17186,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Fijo' },
-                        { name: 'Cardinalidad', value: '45' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -11914,8 +17213,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -11927,7 +17232,10 @@ export const COMERCIALDATA = [
                       attributes: [],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -11949,8 +17257,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 12 },
-                      taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -11968,18 +17282,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '1' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '45' },
-                  { name: 'order-centrex', description: '6' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '1',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '6',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -11989,7 +17326,6 @@ export const COMERCIALDATA = [
                 title: 'Básico DEC+base',
               },
             },
-            { currentCM: null, idCentrex: 0, opcion: [] },
             {
               currentCM: null,
               idCentrex: 0,
@@ -11997,7 +17333,7 @@ export const COMERCIALDATA = [
               line: {
                 cartItemRelationship: [
                   {
-                    id: '1-2VCAPP-5',
+                    id: '1-2VCAPP-2',
                     action: 'New',
                     status: '',
                     cartItem: [],
@@ -12005,9 +17341,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Fijo' },
-                        { name: 'Cardinalidad', value: '45' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -12019,8 +17368,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -12032,7 +17387,329 @@ export const COMERCIALDATA = [
                       attributes: [],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                ],
+                category: 'Empresa',
+                childrenList: '',
+                description:
+                  '<div>Inal&aacute;mbrico DEC</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+                disabled: false,
+                isbloked: false,
+                id: '1-2VC5KX',
+                isByRule: false,
+                isConstraint: false,
+                isSelected: true,
+                itemPrice: [
+                  {
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 12,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 14.52,
+                      },
+                      ospTaxRateName: 'IVA',
+                      taxRate: 0.21,
+                    },
+                    priceAlteration: [],
+                    priceType: 'Recurring',
+                  },
+                ],
+                licenseContracted: null,
+                licenseToContract: 0,
+                name: 'Inalámbrico DEC',
+                ospTv: 'Centrex_Fijo',
+                ospTypeChannel: 'otros',
+                price: 12,
+                productSpecCharacteristic: [
+                  {
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'max-centrex-items',
+                    description: '7',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '7',
+                  },
+                ],
+                promoSelected: null,
+                promotion: {
+                  ospTv: '',
+                },
+                promotionLists: [],
+                realId: '',
+                show: false,
+                subCategory: 'Centrex',
+                svaChildrenList: null,
+                svaProductClass: '',
+                title: 'Inalámbrico DEC',
+              },
+            },
+            {
+              currentCM: null,
+              idCentrex: 0,
+              opcion: [],
+              line: {
+                cartItemRelationship: [
+                  {
+                    id: '1-2VCAPP-6',
+                    action: 'New',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'One-Time',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-2VCAPP',
+                      name: 'Puesto Fijo Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                ],
+                category: 'Empresa',
+                childrenList: '',
+                description:
+                  '<div>Puesto avanzado IP (2021)</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+                disabled: false,
+                isbloked: false,
+                id: '1-34ROOG',
+                isByRule: false,
+                isConstraint: false,
+                isSelected: true,
+                itemPrice: [
+                  {
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 19,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 22.99,
+                      },
+                      ospTaxRateName: 'IVA',
+                      taxRate: 0.21,
+                    },
+                    priceAlteration: [],
+                    priceType: 'Recurring',
+                  },
+                ],
+                licenseContracted: 0,
+                licenseToContract: 0,
+                name: 'Puesto avanzado IP (2021)',
+                ospTv: 'Centrex_Fijo',
+                ospTypeChannel: 'otros',
+                price: 19,
+                productSpecCharacteristic: [
+                  {
+                    name: 'equipmentTuring',
+                    ospCategory: 'cdvcharacteristic',
+                    description: 'Puesto Fijo Avanzado Centralita Love Empresa',
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [],
+                  },
+                  {
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '1',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '4',
+                  },
+                ],
+                promoSelected: null,
+                promotion: {
+                  ospTv: '',
+                },
+                promotionLists: [],
+                realId: '',
+                show: false,
+                subCategory: 'Centrex',
+                svaChildrenList: null,
+                svaProductClass: '',
+                title: 'Puesto avanzado IP (2021)',
+              },
+            },
+            {
+              currentCM: null,
+              idCentrex: 0,
+              opcion: [],
+              line: {
+                cartItemRelationship: [
+                  {
+                    id: '1-2VCAPP-6',
+                    action: 'New',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'One-Time',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-2VCAPP',
+                      name: 'Puesto Fijo Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -12055,8 +17732,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 10 },
-                      taxIncludedAmount: { unit: 'EUR', value: 12.1 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 10,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 12.1,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12074,18 +17757,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '45' },
-                  { name: 'order-centrex', description: '5' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '5',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12102,7 +17808,7 @@ export const COMERCIALDATA = [
               line: {
                 cartItemRelationship: [
                   {
-                    id: '1-2VCAPP-5',
+                    id: '1-2VCAPP-6',
                     action: 'New',
                     status: '',
                     cartItem: [],
@@ -12110,9 +17816,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Fijo' },
-                        { name: 'Cardinalidad', value: '45' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -12124,8 +17843,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -12137,112 +17862,10 @@ export const COMERCIALDATA = [
                       attributes: [],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
-                    ],
-                    ospSelected: false,
-                    ospSelectable: false,
-                    ospMandatory: false,
-                    ospObjectType: '',
-                    ospCartItemType: '',
-                    ospCartItemSubtype: '',
-                  },
-                ],
-                category: 'Empresa',
-                childrenList: '',
-                description:
-                  '<div>Puesto Fijo B&aacute;sico IP</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-                disabled: false,
-                isbloked: false,
-                id: '1-2VC5L6',
-                isByRule: false,
-                isConstraint: false,
-                isSelected: true,
-                itemPrice: [
-                  {
-                    price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 10 },
-                      taxIncludedAmount: { unit: 'EUR', value: 12.1 },
-                      ospTaxRateName: 'IVA',
-                      taxRate: 0.21,
-                    },
-                    priceAlteration: [],
-                    priceType: 'Recurring',
-                  },
-                ],
-                licenseContracted: 0,
-                licenseToContract: 0,
-                name: 'Puesto Fijo Básico IP',
-                ospTv: 'Centrex_Fijo',
-                ospTypeChannel: 'otros',
-                price: 10,
-                productSpecCharacteristic: [
-                  {
-                    productSpecSubcharacteristic: [],
-                    productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
-                    ],
-                  },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '45' },
-                  { name: 'order-centrex', description: '5' },
-                ],
-                promoSelected: null,
-                promotion: { ospTv: '' },
-                promotionLists: [],
-                realId: '',
-                show: false,
-                subCategory: 'Centrex',
-                svaChildrenList: null,
-                svaProductClass: '',
-                title: 'Básico IP',
-              },
-            },
-            {
-              currentCM: null,
-              idCentrex: 0,
-              opcion: [],
-              line: {
-                cartItemRelationship: [
-                  {
-                    id: '1-2VCAPP-5',
-                    action: 'New',
-                    status: '',
-                    cartItem: [],
-                    product: {
-                      productRelationship: [],
-                      place: [],
-                      characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Fijo' },
-                        { name: 'Cardinalidad', value: '45' },
-                        { name: 'Nivel', value: '2' },
-                      ],
-                      relatedParty: [],
-                      productSpecification: [],
-                      attachment: [],
-                    },
-                    itemPrice: [
                       {
-                        name: 'Orange',
-                        description: 'Lista de Precios de Orange',
-                        priceType: 'One-Time',
-                        price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
-                        },
-                        priceAlteration: [],
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
                       },
-                    ],
-                    productOffering: {
-                      id: '1-2VCAPP',
-                      name: 'Puesto Fijo Alta',
-                      category: [],
-                      attributes: [],
-                    },
-                    cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -12265,8 +17888,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 33 },
-                      taxIncludedAmount: { unit: 'EUR', value: 39.93 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 33,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 39.93,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12284,18 +17913,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '45' },
-                  { name: 'order-centrex', description: '8' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '8',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12312,7 +17964,7 @@ export const COMERCIALDATA = [
               line: {
                 cartItemRelationship: [
                   {
-                    id: '1-2VCAPP-5',
+                    id: '1-2VCAPP-6',
                     action: 'New',
                     status: '',
                     cartItem: [],
@@ -12320,9 +17972,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Fijo' },
-                        { name: 'Cardinalidad', value: '45' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Fijo',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '45',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -12334,8 +17999,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'One-Time',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -12347,7 +18018,10 @@ export const COMERCIALDATA = [
                       attributes: [],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -12370,8 +18044,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 23 },
-                      taxIncludedAmount: { unit: 'EUR', value: 27.83 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 23,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 27.83,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12389,18 +18069,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '45' },
-                  { name: 'order-centrex', description: '9' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '45',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '9',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12431,8 +18134,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12450,18 +18159,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '1' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '1',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12490,8 +18222,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12509,18 +18247,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '1' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '1',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12549,8 +18310,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 6 },
-                      taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 6,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 7.26,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12568,18 +18335,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '2' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '2',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12608,8 +18398,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 6 },
-                      taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 6,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 7.26,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12627,77 +18423,41 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '2' },
-                ],
-                promoSelected: null,
-                promotion: { ospTv: '' },
-                promotionLists: [],
-                realId: '',
-                show: false,
-                subCategory: 'Centrex',
-                svaChildrenList: null,
-                svaProductClass: '',
-                title: 'Móvil avanzado',
-              },
-            },
-            {
-              currentCM: null,
-              idCentrex: 0,
-              opcion: [],
-              line: {
-                cartItemRelationship: [],
-                category: 'Empresa',
-                childrenList: '',
-                description:
-                  '<div>Puesto M&oacute;vil Avanzado</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-                disabled: false,
-                isbloked: false,
-                id: '1-2VX9F1',
-                isByRule: false,
-                isConstraint: false,
-                isSelected: true,
-                itemPrice: [
                   {
-                    price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 6 },
-                      taxIncludedAmount: { unit: 'EUR', value: 7.26 },
-                      ospTaxRateName: 'IVA',
-                      taxRate: 0.21,
-                    },
-                    priceAlteration: [],
-                    priceType: 'Recurring',
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'min-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '2',
                   },
                 ],
-                licenseContracted: 0,
-                licenseToContract: 0,
-                name: 'Puesto Móvil Avanzado',
-                ospTv: 'Centrex_Móvil',
-                ospTypeChannel: 'otros',
-                price: 6,
-                productSpecCharacteristic: [
-                  {
-                    productSpecSubcharacteristic: [],
-                    productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
-                    ],
-                  },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'min-centrex-items', description: '0' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '2' },
-                ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12716,7 +18476,7 @@ export const COMERCIALDATA = [
               line: {
                 cartItemRelationship: [
                   {
-                    id: '1-2VCAQH-1',
+                    id: '1-2VCAQH-3',
                     action: 'New',
                     status: '',
                     cartItem: [],
@@ -12724,9 +18484,22 @@ export const COMERCIALDATA = [
                       productRelationship: [],
                       place: [],
                       characteristic: [
-                        { name: 'ProductClass', value: 'Puestos Terceros' },
-                        { name: 'Cardinalidad', value: '99' },
-                        { name: 'Nivel', value: '2' },
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Terceros',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '99',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
                       ],
                       relatedParty: [],
                       productSpecification: [],
@@ -12738,8 +18511,14 @@ export const COMERCIALDATA = [
                         description: 'Lista de Precios de Orange',
                         priceType: 'Recurring',
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                         },
                         priceAlteration: [],
                       },
@@ -12751,7 +18530,10 @@ export const COMERCIALDATA = [
                       attributes: [],
                     },
                     cartItemRelationship: [
-                      { id: '1-244QJP', type: 'Fijo Negocio' },
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
                     ],
                     ospSelected: false,
                     ospSelectable: false,
@@ -12774,8 +18556,14 @@ export const COMERCIALDATA = [
                 itemPrice: [
                   {
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 6 },
-                      taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 6,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 7.26,
+                      },
                       ospTaxRateName: 'IVA',
                       taxRate: 0.21,
                     },
@@ -12793,17 +18581,341 @@ export const COMERCIALDATA = [
                   {
                     productSpecSubcharacteristic: [],
                     productSpecCharacteristicValue: [
-                      { valueType: 'lossNotify', value: 'true' },
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
                     ],
                   },
-                  { name: 'max-centrex-items', description: '999' },
-                  { name: 'type-switch-centrex-items', description: 'false' },
-                  { name: 'default-centrex-items', description: '0' },
-                  { name: 'group-max-centrex-items', description: '999' },
-                  { name: 'order-centrex', description: '3' },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '3',
+                  },
                 ],
                 promoSelected: null,
-                promotion: { ospTv: '' },
+                promotion: {
+                  ospTv: '',
+                },
+                promotionLists: [],
+                realId: '',
+                show: false,
+                subCategory: 'Centrex',
+                svaChildrenList: null,
+                svaProductClass: '',
+                title: 'Móvil terceros',
+              },
+            },
+            {
+              currentCM: null,
+              idCentrex: 0,
+              opcion: [],
+              line: {
+                cartItemRelationship: [
+                  {
+                    id: '1-2VCAQH-3',
+                    action: 'New',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Terceros',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '99',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-2VCAQH',
+                      name: 'Puesto Movil Terceros Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                ],
+                category: 'Empresa',
+                childrenList: '',
+                description:
+                  '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+                disabled: false,
+                isbloked: false,
+                id: '1-2VCBGZ',
+                isByRule: false,
+                isConstraint: false,
+                isSelected: true,
+                itemPrice: [
+                  {
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 6,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 7.26,
+                      },
+                      ospTaxRateName: 'IVA',
+                      taxRate: 0.21,
+                    },
+                    priceAlteration: [],
+                    priceType: 'Recurring',
+                  },
+                ],
+                licenseContracted: 0,
+                licenseToContract: 0,
+                name: 'Puesto Móvil terceros',
+                ospTv: 'Centrex_Terceros',
+                ospTypeChannel: 'otros',
+                price: 6,
+                productSpecCharacteristic: [
+                  {
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '3',
+                  },
+                ],
+                promoSelected: null,
+                promotion: {
+                  ospTv: '',
+                },
+                promotionLists: [],
+                realId: '',
+                show: false,
+                subCategory: 'Centrex',
+                svaChildrenList: null,
+                svaProductClass: '',
+                title: 'Móvil terceros',
+              },
+            },
+            {
+              currentCM: null,
+              idCentrex: 0,
+              opcion: [],
+              line: {
+                cartItemRelationship: [
+                  {
+                    id: '1-2VCAQH-3',
+                    action: 'New',
+                    status: '',
+                    cartItem: [],
+                    product: {
+                      productRelationship: [],
+                      place: [],
+                      characteristic: [
+                        {
+                          name: 'ProductClass',
+                          value: 'Puestos Terceros',
+                        },
+                        {
+                          name: 'Cardinalidad',
+                          value: '99',
+                        },
+                        {
+                          name: 'Nivel',
+                          value: '2',
+                        },
+                        {
+                          name: 'typeProductCentrex',
+                          value: 'Centrex',
+                        },
+                      ],
+                      relatedParty: [],
+                      productSpecification: [],
+                      attachment: [],
+                    },
+                    itemPrice: [
+                      {
+                        name: 'Orange',
+                        description: 'Lista de Precios de Orange',
+                        priceType: 'Recurring',
+                        price: {
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                        },
+                        priceAlteration: [],
+                      },
+                    ],
+                    productOffering: {
+                      id: '1-2VCAQH',
+                      name: 'Puesto Movil Terceros Alta',
+                      category: [],
+                      attributes: [],
+                    },
+                    cartItemRelationship: [
+                      {
+                        id: '1-244QJP',
+                        type: 'Fijo Negocio',
+                      },
+                    ],
+                    ospSelected: false,
+                    ospSelectable: false,
+                    ospMandatory: false,
+                    ospObjectType: '',
+                    ospCartItemType: '',
+                    ospCartItemSubtype: '',
+                  },
+                ],
+                category: 'Empresa',
+                childrenList: '',
+                description:
+                  '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+                disabled: false,
+                isbloked: false,
+                id: '1-2VCBGZ',
+                isByRule: false,
+                isConstraint: false,
+                isSelected: true,
+                itemPrice: [
+                  {
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 6,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 7.26,
+                      },
+                      ospTaxRateName: 'IVA',
+                      taxRate: 0.21,
+                    },
+                    priceAlteration: [],
+                    priceType: 'Recurring',
+                  },
+                ],
+                licenseContracted: 0,
+                licenseToContract: 0,
+                name: 'Puesto Móvil terceros',
+                ospTv: 'Centrex_Terceros',
+                ospTypeChannel: 'otros',
+                price: 6,
+                productSpecCharacteristic: [
+                  {
+                    productSpecSubcharacteristic: [],
+                    productSpecCharacteristicValue: [
+                      {
+                        valueType: 'lossNotify',
+                        value: 'true',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'type-switch-centrex-items',
+                    description: 'false',
+                  },
+                  {
+                    name: 'default-centrex-items',
+                    description: '0',
+                  },
+                  {
+                    name: 'group-max-centrex-items',
+                    description: '999',
+                  },
+                  {
+                    name: 'order-centrex',
+                    description: '3',
+                  },
+                ],
+                promoSelected: null,
+                promotion: {
+                  ospTv: '',
+                },
                 promotionLists: [],
                 realId: '',
                 show: false,
@@ -12831,14 +18943,10 @@ export const COMERCIALDATA = [
             '1-245VTE',
             '1-330BHJ',
             '1-2VEOAS',
-            '1-2VEOGR',
             '1-245VTS',
-            '1-37VJHD',
             '1-2VEOB1',
             '1-2VEOBA',
             '1-3GUTNV',
-            '1-245HA0',
-            '1-2V9SNQ',
             '1-2VCAPP',
             '1-2VCAQH',
             '1-2VC5KP',
@@ -12848,13 +18956,13 @@ export const COMERCIALDATA = [
             '1-34RONL',
             '1-34ROOG',
           ],
-          numLineCentrexFijo: 8,
-          numLineCentrexMovil: 5,
-          numLineCentrexMovilTerceros: 1,
+          numLineCentrexFijo: 9,
+          numLineCentrexMovil: 4,
+          numLineCentrexMovilTerceros: 3,
           selectedCentrex: true,
           selectedIvr: false,
           selectedSwitch: true,
-          switchQuantity: 1,
+          switchQuantity: 2,
         },
         selectedSvaList: [
           {
@@ -12873,8 +18981,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -12892,7 +19006,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -12904,16 +19021,25 @@ export const COMERCIALDATA = [
                 status: '',
                 cartItem: [],
                 product: {
-                  name: 'Llamadas internacionales',
-                  description:
-                    '<div>M&oacute;dulo para usar los minutos de la tarifa plana para llamar tambi&eacute;n a n&uacute;meros fijos Internacionales</div>\r\n',
-                  productRelationship: [{ type: 'SVA' }],
+                  productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'IdUnico', value: '1-34Q2TX-1' },
-                    { name: 'IdUnicoPadre', value: '1-244QJP-1' },
-                    { name: 'Included by constraint', value: 'true' },
-                    { name: 'ProductClass', value: 'Bonos Internacionales' },
+                    {
+                      name: 'IdUnico',
+                      value: '1-34Q2TX-1',
+                    },
+                    {
+                      name: 'IdUnicoPadre',
+                      value: '1-244QJP-1',
+                    },
+                    {
+                      name: 'Included by constraint',
+                      value: 'true',
+                    },
+                    {
+                      name: 'ProductClass',
+                      value: 'Bonos Internacionales',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -12925,8 +19051,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                       taxRate: 0.21,
                     },
                     priceAlteration: [
@@ -12935,8 +19067,14 @@ export const COMERCIALDATA = [
                         priceType: 'Recurring',
                         priority: 1,
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 0 },
-                          taxIncludedAmount: { unit: 'EUR', value: 0 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 0,
+                          },
                           taxRate: 0.21,
                         },
                       },
@@ -12946,7 +19084,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-34Q2TX',
                   name: 'Bono Internacional 1000 min',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -12959,7 +19101,11 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-244QJP-1' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP-1',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: true,
                 ospMandatory: true,
@@ -12993,8 +19139,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                  taxIncludedAmount: { unit: 'EUR', value: 2 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1.65289,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 2,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13012,7 +19164,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -13024,15 +19179,21 @@ export const COMERCIALDATA = [
                 status: '',
                 cartItem: [],
                 product: {
-                  name: 'Identificacion de Llamadas',
-                  description:
-                    '<div>\r\n<div>Identificacion de Llamadas</div>\r\n</div>\r\n',
-                  productRelationship: [{ type: 'SVA' }],
+                  productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'IdUnico', value: '1-15IZBH-1' },
-                    { name: 'IdUnicoPadre', value: '1-244QJP-1' },
-                    { name: 'ProductClass', value: 'Servicios Configurables' },
+                    {
+                      name: 'IdUnico',
+                      value: '1-15IZBH-1',
+                    },
+                    {
+                      name: 'IdUnicoPadre',
+                      value: '1-244QJP-1',
+                    },
+                    {
+                      name: 'ProductClass',
+                      value: 'Servicios Configurables',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13044,8 +19205,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                      taxIncludedAmount: { unit: 'EUR', value: 2 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 1.65289,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 2,
+                      },
                       taxRate: 0.21,
                     },
                     priceAlteration: [
@@ -13054,8 +19221,14 @@ export const COMERCIALDATA = [
                         priceType: 'Recurring',
                         priority: 1,
                         price: {
-                          dutyFreeAmount: { unit: 'EUR', value: 1.65289 },
-                          taxIncludedAmount: { unit: 'EUR', value: 2 },
+                          dutyFreeAmount: {
+                            unit: 'EUR',
+                            value: 1.65289,
+                          },
+                          taxIncludedAmount: {
+                            unit: 'EUR',
+                            value: 2,
+                          },
                           taxRate: 0.21,
                         },
                       },
@@ -13065,7 +19238,11 @@ export const COMERCIALDATA = [
                 productOffering: {
                   id: '1-15IZBH',
                   name: 'Identificacion de Llamadas',
-                  category: [{ name: 'Comercial ATG Orange' }],
+                  category: [
+                    {
+                      name: 'Comercial ATG Orange',
+                    },
+                  ],
                   attributes: [
                     {
                       name: 'Promocion Base',
@@ -13078,7 +19255,11 @@ export const COMERCIALDATA = [
                     },
                   ],
                 },
-                cartItemRelationship: [{ id: '1-244QJP-1' }],
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP-1',
+                  },
+                ],
                 ospSelected: false,
                 ospSelectable: false,
                 ospMandatory: false,
@@ -13111,8 +19292,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 25 },
-                  taxIncludedAmount: { unit: 'EUR', value: 30.25 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 25,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 30.25,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13138,7 +19325,10 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
             ],
@@ -13153,9 +19343,18 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Centralita' },
-                    { name: 'Cardinalidad', value: '1' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Centralita',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '1',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13167,8 +19366,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 25 },
-                      taxIncludedAmount: { unit: 'EUR', value: 30.25 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 25,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 30.25,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -13199,7 +19404,10 @@ export const COMERCIALDATA = [
                   ],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -13232,8 +19440,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13251,18 +19465,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '50' },
-              { name: 'order-centrex', description: '11' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '11',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13285,8 +19522,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 1 },
-                  taxIncludedAmount: { unit: 'EUR', value: 1.21 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13304,18 +19547,123 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'false' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '50' },
-              { name: 'order-centrex', description: '13' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '13',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Numeraciones DDI Portabilidades',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Empresa',
+            childrenList: '',
+            description: '<div>Numeraciones DDI Portabilidades</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-369LC9',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 1,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 1.21,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Numeraciones DDI Portabilidades',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 1,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'false',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '50',
+              },
+              {
+                name: 'order-centrex',
+                description: '13',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13335,9 +19683,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13349,8 +19710,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -13362,7 +19729,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -13384,8 +19754,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 12 },
-                  taxIncludedAmount: { unit: 'EUR', value: 14.52 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13403,18 +19779,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '1' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '6' },
+              {
+                name: 'max-centrex-items',
+                description: '1',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '6',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13426,7 +19825,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-2',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -13434,9 +19833,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13448,8 +19860,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -13461,7 +19879,319 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Inal&aacute;mbrico DEC</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VC5KX',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 12,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 14.52,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: null,
+            licenseToContract: 0,
+            name: 'Inalámbrico DEC',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 12,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '7',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'order-centrex',
+                description: '7',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Inalámbrico DEC',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAPP-6',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'One-Time',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAPP',
+                  name: 'Puesto Fijo Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto avanzado IP (2021)</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-34ROOG',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 19,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 22.99,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto avanzado IP (2021)',
+            ospTv: 'Centrex_Fijo',
+            ospTypeChannel: 'otros',
+            price: 19,
+            productSpecCharacteristic: [
+              {
+                name: 'equipmentTuring',
+                ospCategory: 'cdvcharacteristic',
+                description: 'Puesto Fijo Avanzado Centralita Love Empresa',
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [],
+              },
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '1',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '4',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Puesto avanzado IP (2021)',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAPP-6',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'One-Time',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAPP',
+                  name: 'Puesto Fijo Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -13484,8 +20214,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 10 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.1 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 10,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 12.1,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13503,18 +20239,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '5' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '5',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13526,7 +20285,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-6',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -13534,9 +20293,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13548,8 +20320,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -13561,107 +20339,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
-                ],
-                ospSelected: false,
-                ospSelectable: false,
-                ospMandatory: false,
-                ospObjectType: '',
-                ospCartItemType: '',
-                ospCartItemSubtype: '',
-              },
-            ],
-            category: 'Empresa',
-            childrenList: '',
-            description:
-              '<div>Puesto Fijo B&aacute;sico IP</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-            disabled: false,
-            isbloked: false,
-            id: '1-2VC5L6',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: true,
-            itemPrice: [
-              {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 10 },
-                  taxIncludedAmount: { unit: 'EUR', value: 12.1 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
-              },
-            ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Puesto Fijo Básico IP',
-            ospTv: 'Centrex_Fijo',
-            ospTypeChannel: 'otros',
-            price: 10,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                ],
-              },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '5' },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: false,
-            subCategory: 'Centrex',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Básico IP',
-          },
-          {
-            cartItemRelationship: [
-              {
-                id: '1-2VCAPP-5',
-                action: 'New',
-                status: '',
-                cartItem: [],
-                product: {
-                  productRelationship: [],
-                  place: [],
-                  characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
-                  ],
-                  relatedParty: [],
-                  productSpecification: [],
-                  attachment: [],
-                },
-                itemPrice: [
                   {
-                    name: 'Orange',
-                    description: 'Lista de Precios de Orange',
-                    priceType: 'One-Time',
-                    price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
-                    },
-                    priceAlteration: [],
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
                   },
-                ],
-                productOffering: {
-                  id: '1-2VCAPP',
-                  name: 'Puesto Fijo Alta',
-                  category: [],
-                  attributes: [],
-                },
-                cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -13684,8 +20365,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 33 },
-                  taxIncludedAmount: { unit: 'EUR', value: 39.93 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 33,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 39.93,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13703,18 +20390,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '8' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '8',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13726,7 +20436,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAPP-5',
+                id: '1-2VCAPP-6',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -13734,9 +20444,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Fijo' },
-                    { name: 'Cardinalidad', value: '45' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Fijo',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '45',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -13748,8 +20471,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'One-Time',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -13761,7 +20490,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -13784,8 +20516,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 23 },
-                  taxIncludedAmount: { unit: 'EUR', value: 27.83 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 23,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 27.83,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13803,18 +20541,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '45' },
-              { name: 'order-centrex', description: '9' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '45',
+              },
+              {
+                name: 'order-centrex',
+                description: '9',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13838,8 +20599,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13857,18 +20624,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '1' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '1',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13892,8 +20682,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 0 },
-                  taxIncludedAmount: { unit: 'EUR', value: 0 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 0,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13911,18 +20707,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '1' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '1',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -13946,8 +20765,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -13965,18 +20790,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '2',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -14000,8 +20848,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -14019,72 +20873,41 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
-            ],
-            promoSelected: null,
-            promotion: { ospTv: '' },
-            promotionLists: [],
-            realId: '',
-            show: false,
-            subCategory: 'Centrex',
-            svaChildrenList: null,
-            svaProductClass: '',
-            title: 'Móvil avanzado',
-          },
-          {
-            cartItemRelationship: [],
-            category: 'Empresa',
-            childrenList: '',
-            description:
-              '<div>Puesto M&oacute;vil Avanzado</div>\r\n\r\n<div>&nbsp;</div>\r\n',
-            disabled: false,
-            isbloked: false,
-            id: '1-2VX9F1',
-            isByRule: false,
-            isConstraint: false,
-            isSelected: true,
-            itemPrice: [
               {
-                price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
-                  ospTaxRateName: 'IVA',
-                  taxRate: 0.21,
-                },
-                priceAlteration: [],
-                priceType: 'Recurring',
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '2',
               },
             ],
-            licenseContracted: 0,
-            licenseToContract: 0,
-            name: 'Puesto Móvil Avanzado',
-            ospTv: 'Centrex_Móvil',
-            ospTypeChannel: 'otros',
-            price: 6,
-            productSpecCharacteristic: [
-              {
-                productSpecSubcharacteristic: [],
-                productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
-                ],
-              },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '2' },
-            ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -14096,7 +20919,7 @@ export const COMERCIALDATA = [
           {
             cartItemRelationship: [
               {
-                id: '1-2VCAQH-1',
+                id: '1-2VCAQH-3',
                 action: 'New',
                 status: '',
                 cartItem: [],
@@ -14104,9 +20927,22 @@ export const COMERCIALDATA = [
                   productRelationship: [],
                   place: [],
                   characteristic: [
-                    { name: 'ProductClass', value: 'Puestos Terceros' },
-                    { name: 'Cardinalidad', value: '99' },
-                    { name: 'Nivel', value: '2' },
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
                   ],
                   relatedParty: [],
                   productSpecification: [],
@@ -14118,8 +20954,14 @@ export const COMERCIALDATA = [
                     description: 'Lista de Precios de Orange',
                     priceType: 'Recurring',
                     price: {
-                      dutyFreeAmount: { unit: 'EUR', value: 0 },
-                      taxIncludedAmount: { unit: 'EUR', value: 0 },
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
                     },
                     priceAlteration: [],
                   },
@@ -14131,7 +20973,10 @@ export const COMERCIALDATA = [
                   attributes: [],
                 },
                 cartItemRelationship: [
-                  { id: '1-244QJP', type: 'Fijo Negocio' },
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
                 ],
                 ospSelected: false,
                 ospSelectable: false,
@@ -14154,8 +20999,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 6 },
-                  taxIncludedAmount: { unit: 'EUR', value: 7.26 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -14173,17 +21024,331 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '999' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '999' },
-              { name: 'order-centrex', description: '3' },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Móvil terceros',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAQH-3',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAQH',
+                  name: 'Puesto Movil Terceros Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VCBGZ',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto Móvil terceros',
+            ospTv: 'Centrex_Terceros',
+            ospTypeChannel: 'otros',
+            price: 6,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Móvil terceros',
+          },
+          {
+            cartItemRelationship: [
+              {
+                id: '1-2VCAQH-3',
+                action: 'New',
+                status: '',
+                cartItem: [],
+                product: {
+                  productRelationship: [],
+                  place: [],
+                  characteristic: [
+                    {
+                      name: 'ProductClass',
+                      value: 'Puestos Terceros',
+                    },
+                    {
+                      name: 'Cardinalidad',
+                      value: '99',
+                    },
+                    {
+                      name: 'Nivel',
+                      value: '2',
+                    },
+                    {
+                      name: 'typeProductCentrex',
+                      value: 'Centrex',
+                    },
+                  ],
+                  relatedParty: [],
+                  productSpecification: [],
+                  attachment: [],
+                },
+                itemPrice: [
+                  {
+                    name: 'Orange',
+                    description: 'Lista de Precios de Orange',
+                    priceType: 'Recurring',
+                    price: {
+                      dutyFreeAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                      taxIncludedAmount: {
+                        unit: 'EUR',
+                        value: 0,
+                      },
+                    },
+                    priceAlteration: [],
+                  },
+                ],
+                productOffering: {
+                  id: '1-2VCAQH',
+                  name: 'Puesto Movil Terceros Alta',
+                  category: [],
+                  attributes: [],
+                },
+                cartItemRelationship: [
+                  {
+                    id: '1-244QJP',
+                    type: 'Fijo Negocio',
+                  },
+                ],
+                ospSelected: false,
+                ospSelectable: false,
+                ospMandatory: false,
+                ospObjectType: '',
+                ospCartItemType: '',
+                ospCartItemSubtype: '',
+              },
+            ],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>Puesto M&oacute;vil terceros</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VCBGZ',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 6,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 7.26,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'Recurring',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Puesto Móvil terceros',
+            ospTv: 'Centrex_Terceros',
+            ospTypeChannel: 'otros',
+            price: 6,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '999',
+              },
+              {
+                name: 'order-centrex',
+                description: '3',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -14207,8 +21372,14 @@ export const COMERCIALDATA = [
             itemPrice: [
               {
                 price: {
-                  dutyFreeAmount: { unit: 'EUR', value: 90 },
-                  taxIncludedAmount: { unit: 'EUR', value: 108.9 },
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 90,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 108.9,
+                  },
                   ospTaxRateName: 'IVA',
                   taxRate: 0.21,
                 },
@@ -14226,18 +21397,124 @@ export const COMERCIALDATA = [
               {
                 productSpecSubcharacteristic: [],
                 productSpecCharacteristicValue: [
-                  { valueType: 'lossNotify', value: 'true' },
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
                 ],
               },
-              { name: 'max-centrex-items', description: '4' },
-              { name: 'min-centrex-items', description: '0' },
-              { name: 'type-switch-centrex-items', description: 'false' },
-              { name: 'default-centrex-items', description: '0' },
-              { name: 'group-max-centrex-items', description: '4' },
-              { name: 'order-centrex', description: '15' },
+              {
+                name: 'max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'order-centrex',
+                description: '15',
+              },
             ],
             promoSelected: null,
-            promotion: { ospTv: '' },
+            promotion: {
+              ospTv: '',
+            },
+            promotionLists: [],
+            realId: '',
+            show: false,
+            subCategory: 'Centrex',
+            svaChildrenList: null,
+            svaProductClass: '',
+            title: 'Número de Switch',
+          },
+          {
+            cartItemRelationship: [],
+            category: 'Empresa',
+            childrenList: '',
+            description:
+              '<div>N&uacute;mero de Switch</div>\r\n\r\n<div>&nbsp;</div>\r\n',
+            disabled: false,
+            isbloked: false,
+            id: '1-2VENTG',
+            isByRule: false,
+            isConstraint: false,
+            isSelected: true,
+            itemPrice: [
+              {
+                price: {
+                  dutyFreeAmount: {
+                    unit: 'EUR',
+                    value: 90,
+                  },
+                  taxIncludedAmount: {
+                    unit: 'EUR',
+                    value: 108.9,
+                  },
+                  ospTaxRateName: 'IVA',
+                  taxRate: 0.21,
+                },
+                priceAlteration: [],
+                priceType: 'One-Time',
+              },
+            ],
+            licenseContracted: 0,
+            licenseToContract: 0,
+            name: 'Número de Switch',
+            ospTv: 'Centrex_Equipamiento',
+            ospTypeChannel: 'otros',
+            price: 90,
+            productSpecCharacteristic: [
+              {
+                productSpecSubcharacteristic: [],
+                productSpecCharacteristicValue: [
+                  {
+                    valueType: 'lossNotify',
+                    value: 'true',
+                  },
+                ],
+              },
+              {
+                name: 'max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'min-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'type-switch-centrex-items',
+                description: 'false',
+              },
+              {
+                name: 'default-centrex-items',
+                description: '0',
+              },
+              {
+                name: 'group-max-centrex-items',
+                description: '4',
+              },
+              {
+                name: 'order-centrex',
+                description: '15',
+              },
+            ],
+            promoSelected: null,
+            promotion: {
+              ospTv: '',
+            },
             promotionLists: [],
             realId: '',
             show: false,
@@ -14248,20 +21525,29 @@ export const COMERCIALDATA = [
           },
         ],
         uniqueID: '1-31IWTA-1',
-        infoCentrex: { packCualified: true, centrexCualified: true },
+        infoCentrex: {
+          packCualified: true,
+          centrexCualified: true,
+        },
       },
     ],
     terminals: [],
+    commercialActStartedFromContractButton: true,
+    originData: {
+      button: 'tarifas',
+      url: '/tarifas',
+    },
     landingSelected: 'menos',
     isConvergentRate: true,
     enableTab: 'Convergente_AN',
     changeToNAC: true,
     originFixed: 'ALTA',
+    serviceFixedNumber: '',
     coverage: {
       ospCustomerSegment: 'Residencial',
       postalContact: {
         geocode: '',
-        streetNumber: '1',
+        streetNumber: '2',
         street: 'SERRANO',
         streetType: 'CALLE',
         postalCode: '28001',
@@ -14270,22 +21556,25 @@ export const COMERCIALDATA = [
         stateOrProvince: 'MADRID',
         streetNrLast: '',
         streetNrSuffix: '',
-        apartmentNumber: 'OFIC',
-        floorNumber: '001',
+        apartmentNumber: '',
+        floorNumber: '002',
         subUnitNumber: '',
         subUnitType: '',
-        levelNumber: '001',
+        levelNumber: '002',
         hallway: '',
         staircaseNumber: '',
         ospAddressExternalId: [
-          { externalId: '28079  6279     1', refId: 'arvato' },
           {
-            externalId: '28000010733100001         001OFIC1   ',
+            externalId: '28079  6279     2',
+            refId: 'arvato',
+          },
+          {
+            externalId: '28000010733100002         002A       ',
             refId: 'gescal',
           },
         ],
         buildingNameSuffix: '',
-        streetNrLastSuffix: '1',
+        streetNrLastSuffix: 'A',
         country: 'SPAIN',
         ospINECityCode: '28079',
         ospSingularEntity: '28079',
@@ -14302,8 +21591,8 @@ export const COMERCIALDATA = [
       operacion: 'ALTA',
       codigoIUA: '',
       fibraNeba: 'VACANTE',
-      arvato: '28079  6279     1',
-      codigoGescal: '28000010733100001         001OFIC1   ',
+      arvato: '28079  6279     2',
+      codigoGescal: '28000010733100002         002A       ',
       codigoMiga: '',
       singularEntity: '28079',
       fiber: true,
@@ -14312,9 +21601,9 @@ export const COMERCIALDATA = [
       idTecnologia: [
         '1-2VRLUT',
         '1-3PER4I',
-        '1-24A7Z8',
         '1-1PM2EX',
         '1-1PJIUJ',
+        '1-24A7Z8',
         '1-24A7P9',
         '1-254T2D',
         '1-24I3XB',
@@ -14322,15 +21611,15 @@ export const COMERCIALDATA = [
         '1-34FY72',
         '1-3A5OH3',
         '1-3H60C4',
-        '1-3H607W',
         '1-3H60GS',
         '1-3H60AC',
+        '1-3H607W',
         '1-3PERL1',
-        '1-3PERI7',
-        '1-3H607O',
         '1-3PER7C',
         '1-3PERAN',
         '1-3PEREF',
+        '1-3PERI7',
+        '1-3H607O',
         '1-3H6058',
         '1-3H60FO',
         '1-3H602S',
@@ -14340,53 +21629,268 @@ export const COMERCIALDATA = [
       operador: '8',
       procesoProvision: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
       hasFlagTv: [
-        { id: '1-2VRLUT', isTv: { name: 'television', value: 'N' } },
-        { id: '1-2VRLUT', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PER4I', isTv: { name: 'television', value: 'N' } },
-        { id: '1-24A7Z8', isTv: { name: 'television', value: 'N' } },
-        { id: '1-24A7Z8', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-1PM2EX', isTv: { name: 'television', value: 'N' } },
-        { id: '1-1PM2EX', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-1PJIUJ', isTv: { name: 'television', value: 'N' } },
-        { id: '1-1PJIUJ', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-24A7P9', isTv: { name: 'television', value: 'N' } },
-        { id: '1-24A7P9', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-254T2D', isTv: { name: 'television', value: 'N' } },
-        { id: '1-254T2D', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-24I3XB', isTv: { name: 'television', value: 'N' } },
-        { id: '1-38QCR1', isTv: { name: 'television', value: 'N' } },
-        { id: '1-38QCR1', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-34FY72', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3A5OH3', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3H60C4', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3H607W', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3H60GS', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3H60AC', isTv: { name: 'television', value: 'N' } },
-        { id: '1-3H60AC', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PERL1', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PERI7', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3H607O', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PER7C', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PERAN', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3PEREF', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3H6058', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3H60FO', isTv: { name: 'television', value: 'Y' } },
-        { id: '1-3H602S', isTv: { name: 'television', value: 'Y' } },
+        {
+          id: '1-2VRLUT',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-2VRLUT',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3PER4I',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-1PM2EX',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-1PM2EX',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-1PJIUJ',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-1PJIUJ',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-24A7Z8',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-24A7Z8',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-24A7P9',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-24A7P9',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-254T2D',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-254T2D',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-24I3XB',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-38QCR1',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-38QCR1',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-34FY72',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3A5OH3',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3H60C4',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3H60GS',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3H60AC',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3H60AC',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3H607W',
+          isTv: {
+            name: 'television',
+            value: 'N',
+          },
+        },
+        {
+          id: '1-3PERL1',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3PER7C',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3PERAN',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3PEREF',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3PERI7',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3H607O',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3H6058',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3H60FO',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
+        {
+          id: '1-3H602S',
+          isTv: {
+            name: 'television',
+            value: 'Y',
+          },
+        },
       ],
-      startDate: '05/09/2023 09:22:36',
+      startDate: '20/09/2023 14:47:00',
       provisionList: [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-2VRLUT' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-2VRLUT',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14398,15 +21902,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PER4I' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PER4I',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14418,15 +21945,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-24A7Z8' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-1PM2EX',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14438,15 +21988,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-1PM2EX' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-1PJIUJ',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14458,15 +22031,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-1PJIUJ' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-24A7Z8',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14478,15 +22074,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-24A7P9' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-24A7P9',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14498,15 +22117,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-254T2D' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-254T2D',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14518,15 +22160,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-24I3XB' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-24I3XB',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14538,15 +22203,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-38QCR1' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-38QCR1',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14558,15 +22246,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-34FY72' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-34FY72',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14578,15 +22289,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3A5OH3' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3A5OH3',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14598,15 +22332,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H60C4' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H60C4',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14618,15 +22375,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H607W' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H60GS',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14638,15 +22418,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H60GS' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H60AC',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14658,15 +22461,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 2P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H60AC' },
-            { name: 'television', value: 'N' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H607W',
+            },
+            {
+              name: 'television',
+              value: 'N',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '73 - FTTH MOVISTAR VACANTE CON ASIGNACION DE NUMERACION',
@@ -14678,15 +22504,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PERL1' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-24A7Z8',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14698,15 +22547,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-24A7Z8' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PERL1',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14718,15 +22590,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-1PM2EX' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-254T2D',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14738,15 +22633,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-1PJIUJ' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-1PM2EX',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14758,15 +22676,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-254T2D' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-1PJIUJ',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14778,15 +22719,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-24A7P9' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-24A7P9',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14798,15 +22762,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-38QCR1' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-2VRLUT',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14818,15 +22805,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PERI7' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H60AC',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14838,15 +22848,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H607O' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PER7C',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14858,15 +22891,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-2VRLUT' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-38QCR1',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14878,15 +22934,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H60AC' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PERAN',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14898,15 +22977,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PER7C' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PEREF',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14918,15 +23020,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PERAN' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3PERI7',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14938,15 +23063,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3PEREF' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H607O',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14958,15 +23106,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H6058' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H6058',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14978,15 +23149,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H60FO' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H60FO',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -14998,15 +23192,38 @@ export const COMERCIALDATA = [
         {
           name: 'FIBRA INDIRECTO NEBA 3P ALTA',
           relatedParty: [],
-          productSpecification: { name: 'FIBRA' },
+          productSpecification: {
+            name: 'FIBRA',
+          },
           characteristic: [
-            { name: 'idTecnologia', value: '1-3H602S' },
-            { name: 'television', value: 'Y' },
-            { name: 'promocionada', value: '' },
-            { name: 'operador', value: '8' },
-            { name: 'deshabilitado', value: 'NO' },
-            { name: 'fechaDisponibilidad', value: '' },
-            { name: 'tipoTV', value: '' },
+            {
+              name: 'idTecnologia',
+              value: '1-3H602S',
+            },
+            {
+              name: 'television',
+              value: 'Y',
+            },
+            {
+              name: 'promocionada',
+              value: '',
+            },
+            {
+              name: 'operador',
+              value: '8',
+            },
+            {
+              name: 'deshabilitado',
+              value: 'NO',
+            },
+            {
+              name: 'fechaDisponibilidad',
+              value: '',
+            },
+            {
+              name: 'tipoTV',
+              value: '',
+            },
             {
               name: 'procesoProvision - 1',
               value: '79 - FTTH MOVISTAR VACANTE TV CON ASIGNACION',
@@ -15039,33 +23256,6 @@ export const COMERCIALDATA = [
     ],
     watchDetails: true,
     disableBtn: true,
-    scoringData: {
-      ospMobileNumberPortability: '1',
-      ospDonorOperatorWithMNP: '001',
-      ospCustomerTypeForDonorOperatorWithMNP: '1',
-      ospSalesScoring: '1',
-      ospB2ContractMobileLinesMaxNumberAuthorized: '15',
-      ospIsPaymentByInstalmentAuthorized: '0',
-      ospTelephoneNumber: '666666666',
-      ospScoringStatus: '000000',
-      ospIDshoppingCart: '1',
-      ospDeferredPaymentInfo: [
-        {
-          ospMSISDN: null,
-          ospOriginRate: null,
-          ospDestinyRate: null,
-          ospPaymentAmountUpFront: null,
-          ospFinancedAmount: '0.00',
-          ospAmountFee: null,
-          ospDeviceDetail: null,
-          ospVAPType: null,
-          ospPaymentFeeNumber: null,
-          ospDeliveryType: null,
-        },
-      ],
-      ospRNVID: '302023090516584003096662',
-      pagoaplazosconcedido: '0',
-    },
   },
   {
     id: 2,
@@ -15157,21 +23347,19 @@ export const COMERCIALDATA = [
         },
         NACLines: [],
         descriptionPromotion:
-          '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-        recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+          '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+        recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
         techDescription: 'Tu línea móvil Ilimitada adicional',
-        pricePackLineFreeAmount: 12,
-        pricePackLineIncludedAmount: 14.52,
+        pricePackLineFreeAmount: 15,
+        pricePackLineIncludedAmount: 18.15,
         kratosPriceRateFreeAmount: 15,
         kratosPriceRateIncludedAmount: 18.15,
         isDefaultLine: true,
         ratePriceTaxIncluded: 15.73,
         ratePrice: 13,
         isAntaresActivation: false,
-        idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
-        applicationDurationInPack: 0,
+        idPromoTarget: '1-32U7NU|1-31JMSY',
         uniqueID: '1-26QOJ7-1',
-        msisdn: '',
       },
     ],
     idSgmr: null,
@@ -15184,29 +23372,6 @@ export const COMERCIALDATA = [
     serviceNumber: null,
     watchDetails: true,
     isNotNewPrescoring: false,
-    scoringData: {
-      ospSalesScoring: '1',
-      ospB2ContractMobileLinesMaxNumberAuthorized: '14',
-      ospIsPaymentByInstalmentAuthorized: '0',
-      ospScoringStatus: '000000',
-      ospIDshoppingCart: '2',
-      ospDeferredPaymentInfo: [
-        {
-          ospMSISDN: null,
-          ospOriginRate: null,
-          ospDestinyRate: null,
-          ospPaymentAmountUpFront: null,
-          ospFinancedAmount: '0.00',
-          ospAmountFee: null,
-          ospDeviceDetail: null,
-          ospVAPType: null,
-          ospPaymentFeeNumber: null,
-          ospDeliveryType: null,
-        },
-      ],
-      ospRNVID: '302023090516584379992469',
-      pagoaplazosconcedido: '0',
-    },
   },
   {
     id: 3,
@@ -15298,21 +23463,19 @@ export const COMERCIALDATA = [
         },
         NACLines: [],
         descriptionPromotion:
-          '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-        recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+          '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+        recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
         techDescription: 'Tu línea móvil Ilimitada adicional',
-        pricePackLineFreeAmount: 12,
-        pricePackLineIncludedAmount: 14.52,
+        pricePackLineFreeAmount: 15,
+        pricePackLineIncludedAmount: 18.15,
         kratosPriceRateFreeAmount: 15,
         kratosPriceRateIncludedAmount: 18.15,
         isDefaultLine: true,
         ratePriceTaxIncluded: 15.73,
         ratePrice: 13,
         isAntaresActivation: false,
-        idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
-        applicationDurationInPack: 0,
+        idPromoTarget: '1-32U7NU|1-31JMSY',
         uniqueID: '1-26QOJ7-1',
-        msisdn: '',
       },
     ],
     idSgmr: null,
@@ -15325,29 +23488,6 @@ export const COMERCIALDATA = [
     serviceNumber: null,
     watchDetails: true,
     isNotNewPrescoring: false,
-    scoringData: {
-      ospSalesScoring: '1',
-      ospB2ContractMobileLinesMaxNumberAuthorized: '14',
-      ospIsPaymentByInstalmentAuthorized: '0',
-      ospScoringStatus: '000000',
-      ospIDshoppingCart: '3',
-      ospDeferredPaymentInfo: [
-        {
-          ospMSISDN: null,
-          ospOriginRate: null,
-          ospDestinyRate: null,
-          ospPaymentAmountUpFront: null,
-          ospFinancedAmount: '0.00',
-          ospAmountFee: null,
-          ospDeviceDetail: null,
-          ospVAPType: null,
-          ospPaymentFeeNumber: null,
-          ospDeliveryType: null,
-        },
-      ],
-      ospRNVID: '302023090516584379992469',
-      pagoaplazosconcedido: '0',
-    },
   },
   {
     id: 4,
@@ -15439,21 +23579,19 @@ export const COMERCIALDATA = [
         },
         NACLines: [],
         descriptionPromotion:
-          '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-        recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+          '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+        recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
         techDescription: 'Tu línea móvil Ilimitada adicional',
-        pricePackLineFreeAmount: 12,
-        pricePackLineIncludedAmount: 14.52,
+        pricePackLineFreeAmount: 15,
+        pricePackLineIncludedAmount: 18.15,
         kratosPriceRateFreeAmount: 15,
         kratosPriceRateIncludedAmount: 18.15,
         isDefaultLine: true,
         ratePriceTaxIncluded: 15.73,
         ratePrice: 13,
         isAntaresActivation: false,
-        idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
-        applicationDurationInPack: 0,
+        idPromoTarget: '1-32U7NU|1-31JMSY',
         uniqueID: '1-26QOJ7-1',
-        msisdn: '',
       },
     ],
     idSgmr: null,
@@ -15466,29 +23604,6 @@ export const COMERCIALDATA = [
     serviceNumber: null,
     watchDetails: true,
     isNotNewPrescoring: false,
-    scoringData: {
-      ospSalesScoring: '1',
-      ospB2ContractMobileLinesMaxNumberAuthorized: '14',
-      ospIsPaymentByInstalmentAuthorized: '0',
-      ospScoringStatus: '000000',
-      ospIDshoppingCart: '4',
-      ospDeferredPaymentInfo: [
-        {
-          ospMSISDN: null,
-          ospOriginRate: null,
-          ospDestinyRate: null,
-          ospPaymentAmountUpFront: null,
-          ospFinancedAmount: '0.00',
-          ospAmountFee: null,
-          ospDeviceDetail: null,
-          ospVAPType: null,
-          ospPaymentFeeNumber: null,
-          ospDeliveryType: null,
-        },
-      ],
-      ospRNVID: '302023090516584379992469',
-      pagoaplazosconcedido: '0',
-    },
   },
   {
     id: 5,
@@ -15580,21 +23695,19 @@ export const COMERCIALDATA = [
         },
         NACLines: [],
         descriptionPromotion:
-          '|<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
-        recurringChargePeriodPromotion: 'Precio fijo - P|Precio fijo| - P',
+          '<div>Descuento 2&euro; en L&iacute;neas Adicionales pack Love empresa</div>\r\n|',
+        recurringChargePeriodPromotion: 'Precio fijo|Precio fijo - P',
         techDescription: 'Tu línea móvil Ilimitada adicional',
-        pricePackLineFreeAmount: 12,
-        pricePackLineIncludedAmount: 14.52,
+        pricePackLineFreeAmount: 15,
+        pricePackLineIncludedAmount: 18.15,
         kratosPriceRateFreeAmount: 15,
         kratosPriceRateIncludedAmount: 18.15,
         isDefaultLine: true,
         ratePriceTaxIncluded: 15.73,
         ratePrice: 13,
         isAntaresActivation: false,
-        idPromoTarget: '1-31JMSY|1-32U7NU|ACMS-1-2HWWIA',
-        applicationDurationInPack: 0,
+        idPromoTarget: '1-32U7NU|1-31JMSY',
         uniqueID: '1-26QOJ7-1',
-        msisdn: '',
       },
     ],
     idSgmr: null,
@@ -15644,28 +23757,5 @@ export const COMERCIALDATA = [
         ospIsAddSecundary: false,
       },
     ],
-    scoringData: {
-      ospSalesScoring: '1',
-      ospB2ContractMobileLinesMaxNumberAuthorized: '14',
-      ospIsPaymentByInstalmentAuthorized: '0',
-      ospScoringStatus: '000000',
-      ospIDshoppingCart: '5',
-      ospDeferredPaymentInfo: [
-        {
-          ospMSISDN: null,
-          ospOriginRate: null,
-          ospDestinyRate: null,
-          ospPaymentAmountUpFront: null,
-          ospFinancedAmount: '0.00',
-          ospAmountFee: null,
-          ospDeviceDetail: null,
-          ospVAPType: null,
-          ospPaymentFeeNumber: null,
-          ospDeliveryType: null,
-        },
-      ],
-      ospRNVID: '302023090516584379992469',
-      pagoaplazosconcedido: '0',
-    },
   },
 ];
